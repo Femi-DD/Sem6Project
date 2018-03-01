@@ -1,0 +1,141 @@
+footer{
+    background: @baseColor3;
+    padding: 30px 0;
+    .widget{
+        margin-bottom: 30px;
+        .widgetInner{
+            background: fade(#fff,5%);
+            padding: 30px;
+            border-top: 10px solid @baseColor;
+            height: 345px;
+        }
+        h4{
+            font-family: @baseFont5;
+            font-weight: bold;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 1;
+            margin: 0 0 20px;
+        }
+        p{
+            margin-bottom: 0;
+            font-family: @baseFont3;
+            line-height: 21px;
+        }
+        
+        &.recentPostWidget{
+            .nav{
+                li{
+                    a{
+                        color: #fff;
+                        padding: 15px 0;
+                        line-height: 21px;
+                        font-family: @baseFont3;
+                        font-weight: 300;
+                        font-size: 14px;
+                        &:hover,&:focus{
+                            background-color: transparent;
+                            color: #FFF;
+                        }
+                    }
+                    &+ li{
+                        border-top: 1px solid @baseColor3;
+                    }
+                }
+            }
+        }
+        &.aboutWidget{
+            text-align: center;
+            a{
+                display: block;
+                &:after{
+                    content: '';
+                    width: 45px;
+                    height: 2px;
+                    background: #FFF;
+                    display: block;
+                    margin: 18px auto 15px;
+                }
+            }
+            p{
+                color: #fff;
+            }
+        }
+        &.oppeningHoursWidget{
+            .nav{
+                margin-top: 15px;
+                border: 1px solid fade(#fff,5%);
+                li{
+                    color: #FFF;
+                    line-height: 58px;
+                    padding: 0 20px;
+                    &:nth-child(odd){
+                        background: fade(#fff,5%);
+                        &:after{
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid fade(#fff,5%);
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            position: absolute;
+                            bottom: -8px;
+                            left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .copyrightRow{
+        background: fade(#fff,5%);
+        padding: 23px 15px;
+        margin: 0;
+        .copyright{
+            line-height: 60px;
+            color: #fff;
+            font-family: @baseFont3;
+            font-weight: 300;
+            a{
+                color: #fff;
+            }
+        }
+        .goTop{            
+            text-align: center;
+            a{
+                line-height: 58px;
+                width: 60px;
+                font-size: 26px;
+                color: #FFF;
+                border: 1px solid fade(#FFF,20%);
+                border-radius: 100%;
+                display: inline-block;
+            }
+        }
+        .footSocial{
+            margin: 7px 0;
+            .nav{
+                li{
+                    &+ li{
+                        margin-left: 10px;
+                    }
+                    a{
+                        border: 1px solid fade(#FFF,20%);
+                        line-height: 43px;
+                        width: 45px;
+                        color: #FFF;
+                        padding: 0;
+                        border-radius: 0;
+                        text-align: center;
+                        font-size: 17px;
+                        &:hover{
+                            background: @baseColor;
+                            border-color: @baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

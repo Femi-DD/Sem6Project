@@ -1,0 +1,47 @@
+.owl_carousel_home{
+    padding-top: 80px;
+    .owl-controls{
+        margin: 15px 0 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        .owl-nav{
+            div{
+                margin: 0;
+                border-radius: 0;
+                padding: 0;
+                line-height: 40px;
+                width: 49px;
+                border: 1px solid @baseColor7;
+                font-size: 24px;
+                color: @baseColor;
+                background: none;
+                .transition();
+                &:hover{
+                    background: @baseColor7;
+                }
+            }
+            .owl-prev{
+                margin-right: -0.5px;
+            }
+        }
+        .owl-dots{
+            .owl-dot{
+                span{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 0;
+                    margin: 0 2px;
+                    border: 1px solid fade(@baseColor,20%);
+                    background-color: transparent;
+                }
+                &.active{
+                    span{
+                        border-color: @baseColor;
+                        background: @baseColor;
+                    }
+                }
+            }
+        }
+    }
+}

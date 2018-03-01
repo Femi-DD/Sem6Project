@@ -1,1179 +1,1018 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dream Home</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="iconic.css">
-    <script src="js/vendor/modernizr.js"></script>
-    <!--[if lt IE 10 ]>
-    <style type="text/css">
-    .navigation-mobile{
-    display: none;
-  }
-  </style>
-  <![endif]-->
-  </head>
-  <body>
+    <title>Estate Pro</title>
+    
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.min.css">    
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/flexslider/flexslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap-select/css/bootstrap-select.min.css" media="screen" />
+    
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
     <!--[if lt IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
+</head>
+<body class="default">
+    
+    <header class="row">
+        <div class="row m0 topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 social_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 top_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-user"></i> login</a></li>
+                            <li><a href="#"><i class="fa fa-pencil"></i> register</a></li>
+                            <li>
+                                <div class="input-group-btn currencyFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue">&#36;</span> Currency
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">&#36;</span> usd</a></li>
+                                        <li><a href="#"><span class="value">&#163;</span> pound</a></li>
+                                        <li><a href="#"><span class="value">&#165;</span> yen</a></li>
+                                        <li><a href="#"><span class="value">&#8364;</span> euro</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group-btn languageFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue2">en</span> language
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">en</span> english</a></li>
+                                        <li><a href="#"><span class="value">bn</span> bengali</a></li>
+                                        <li><a href="#"><span class="value">de</span> German</a></li>
+                                        <li><a href="#"><span class="value">nl</span> Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation">
+                        <i class="fa fa-bars"></i> Menu
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt=""></a>
+                </div>
 
-    <div class="navigation-mobile">
-	<div>
-	  <i class="iconic iconic-close" id="mobileNav2"></i>
-	</div>
-	<ul>
-	  <li class="menu-item-has-children"><a href="#">Home</a>
-	    <ul class="sub-menu">
-		<li><a href="index.jsp.html">Default Layout</a></li>
-		<li><a href="home-2.html">Home v2</a></li>
-		<li><a href="home-3.html">Home v3</a></li>
-		<li><a href="home-4.html">Home v4</a></li>
-	    </ul>
-	  </li>
-	  <li class="menu-item-has-children"><a href="#">Properties</a>
-	    <ul class="sub-menu">
-		<li><a href="property-list.html">Property List</a>
-		  <ul class="sub-menu">
-		    <li><a href="property-list-sidebar-left.html">Sidebar Left</a></li>
-		    <li><a href="property-list-sidebar-right.html">Sidebar Right</a></li>
-		  </ul>
-		</li>
-		<li><a href="property-details.html">Property Details</a></li>
-	    </ul>
-	  </li>
-	  <li class="menu-item-has-children"><a href="#">Pages</a>
-	    <ul class="sub-menu">
-		<li><a href="page-layout-left-sidebar.html">Sidebar Left</a></li>
-		<li><a href="page-layout-right-sidebar.html">Sidebar Right</a></li>
-	    </ul>
-	  </li>
-	  <li class="menu-item-has-children"><a href="#">Blog</a>
-	    <ul class="sub-menu">
-		<li><a href="#">Blog List</a>
-		  <ul class="dir-right">
-		    <li><a href="blog.html">Masonory Layout</a></li>
-		    <li><a href="blog-list-row.html">Single Row Layout</a></li>
-		  </ul>
-		</li>
-		<li><a href="#">Blog Single Page</a>
-		  <ul class="dir-right">
-		    <li><a href="blog-details.html">With image</a></li>
-		    <li><a href="blog-details-video.html">With Video</a></li>
-		  </ul>
-		</li>
-	    </ul>
-	  </li>
-	  <li><a href="agents.html">Agents</a>
-	    <ul>
-		<li><a href="agents-details.html">Agent Details</a></li>
-	    </ul>
-	  </li>
-	  <li class="menu-item-has-children"><a href="#">ShortCodes</a>
-	    <ul class="sub-menu">
-		<li><a href="#">Typography And Components</a>
-		  <ul class="dir-right">
-		    <li><a href="page-typography.html">General Typography</a></li>
-		    <li><a href="page-heading.html">Heading</a></li>
-		    <li><a href="page-blockquote.html">Blockquote</a></li>
-		    <li><a href="page-boxshadow.html">Box Shadow</a></li>
-		    <li><a href="page-testimonials.html">Testimonials</a></li>
-		    <li><a href="page-tagline.html">Tagline Boxes</a></li>
-		    <li><a href="page-grid-layout.html">Grid Layout</a></li>
-		  </ul>
-		</li>
-		<li><a href="page-buttons.html">Buttons UI</a>
-		</li>
-		<li><a href="page-icons.html">Icons</a>
-		</li>
-	    </ul>
-	  </li>
-	  <li class="menu-item-has-children"><a href="#">Misc</a>
-	    <ul class="dir-right level-1 sub-menu">
-		<li><a href="#">Header</a>
-		  <ul class="dir-right">
-		    <li><a href="header-v1.html">Header v1</a></li>
-		    <li><a href="header-v2.html">Header v2</a></li>
-		    <li><a href="banner-slider.html">Header Slider v1</a></li>
-		    <li><a href="banner-slider-with-caption.html">Header Slider v2</a></li>
-		  </ul>
-		</li>
-		<li><a href="page-footer-v1.html">Footer</a></li>
-	    </ul>
-	  </li>
-	</ul>
-
-
-    </div>
-    <div class="wrap">
-	<!-- sidebar -->
-	<div class="sidebar-full-height2">
-	  <div class="row-float">
-	    <a href="#" class="iconic iconic-menu"></a>
-	  </div>
-
-	</div>
-	<div class="sidebar-full-height">
-	  <div class="sidebar-close-bar">
-	    <a href="#" class="iconic iconic-close2"></a>
-	  </div>
-	  <div class="sidebar-close-bar2">
-	    <a href="#" class="iconic iconic-close2"></a>
-	  </div>
-	  <!-- widget -->
-	  <div class="widget-1 widget-1-address" id="widget-1-num-1">
-	    <h3>your dream  <br>home <br>
-		search <br>
-		ends here. </h3>
-	    <div class="logo-image">
-		<img src="images/logo.png" height="225" width="130" alt="">
-	    </div>
-	    <p>Contact us: <br>
-		Head Office <br>
-		STEP IIT KHARAGPUR <br>
-		WEST BENGAL – 721302 </p>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget -->
-	  <div class="widget-1 widget-1-search" id="widget-1-num-2">
-	    <h4>Search your property</h4>
-	    <div class="form-tab pad-top-small">
-		<a class="active"  href="#widget-1-form-1">All</a>
-		<a href="#widget-1-form-2">Sell</a>
-		<a href="#widget-1-form-3">Rent</a>
-	    </div>
-	    <div class="search-form-2 map-search-control form-cotent-map">
-		<form class="form-1" id="widget-1-form-1">
-		  <div class="row pad-top-large">
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Property types</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Select city</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bedrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bathrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-12">
-			<p>Select your price range</p>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Mini</option>
-			</select>
-		    </div>
-		    <div class="col-xs-12 form-group">
-			<div  class="no-slider">
-			  <span class="info">
-			    <span class="min">Minimum</span>
-			    <span class="max pull-right">Max</span>
-			  </span>
-			</div>
-			<div id="slider-tooltip1" class="slider-tooltip">
-			</div>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="adv-search"><u>Advance Search Option</u></a>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="btn btn-dark pull-right hvr-shutter-out-vertical">Find property</a>
-		    </div>
-		  </div>
-		</form>
-		<form class="form-1 hidden" id="widget-1-form-2">
-		  <div class="row pad-top-large">
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Property types</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Select city</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bedrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bathrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-12">
-			<p>Select your price range</p>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Mini</option>
-			</select>
-		    </div>
-		    <div class="col-xs-12 form-group">
-			<div  class="no-slider">
-			  <span class="info">
-			    <span class="min">Minimum</span>
-			    <span class="max pull-right">Max</span>
-			  </span>
-			</div>
-			<div id="slider-tooltip2" class="slider-tooltip">
-			</div>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="adv-search"><u>Advance Search Option</u></a>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="btn btn-dark pull-right hvr-shutter-in-vertical">Find property</a>
-		    </div>
-		  </div>
-		</form>
-		<form class="form-1 hidden" id="widget-1-form-3">
-		  <div class="row pad-top-large">
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Property types</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Select city</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bedrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Bathrooms</option>
-			</select>
-		    </div>
-		    <div class="col-sm-12">
-			<p>Select your price range</p>
-		    </div>
-		    <div class="col-sm-6 form-group">
-			<select class="form-control">
-			  <option>Mini</option>
-			</select>
-		    </div>
-		    <div class="col-xs-12 form-group">
-			<div  class="no-slider">
-			  <span class="info">
-			    <span class="min">Minimum</span>
-			    <span class="max pull-right">Max</span>
-			  </span>
-			</div>
-			<div id="slider-tooltip3" class="slider-tooltip">
-			</div>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="adv-search"><u>Advance Search Option</u></a>
-		    </div>
-		    <div class="col-xs-6">
-			<a href="#" class="btn btn-dark pull-right hvr-bounce-to-bottom">Find property</a>
-		    </div>
-		  </div>
-		</form>
-	    </div>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget -->
-	  <div class="widget-1" id="widget-1-num-3">
-	    <h3 class="large-heading">Search your
-		dream homes</h3>
-	    <p class="large-text-1">in your city
-		just click on the availabe icons</p>
-	    <p><img src="images/icons/map-marker2.png" height="63" width="44" alt=""></p>
-	    <div class="pad-top-small row-float">
-		<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	    </div>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget -->
-	  <div class="widget-1" id="widget-1-num-4">
-	    <h3 class="large-heading">your dream <br>
-		homes</h3>
-	    <span class="iconic iconic-search"></span>
-	    <p class="large-text-1">Your search result listed here</p>
-	    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget -->
-	  <div class="widget-1 widget-1-rel-prop" id="widget-1-num-5">
-	    <h3 class="medium-heading">related property
-		you may like</h3>
-	    <div class="rltd-property">
-		<ul>
-		  <li>
-		    <a href="#">
-			<img src="images/related-property/image-1.jpg" height="106" width="165" alt="">
-			<span class="overflow">
-			  <span class="type">SALE</span>
-			</span>
-		    </a>
-		    <div class="description">
-			<p>Appertment: <br>
-			  5111 140th<br>
-			  Ave NE Bellevue,<br>
-			  WA 98005 <br>
-			  <span class="price">$2100</span></p>
-		    </div>
-		  </li>
-		  <li>
-		    <a href="#">
-			<img src="images/related-property/image-2.jpg" height="106" width="165" alt="">
-			<span class="overflow">
-			  <span class="type">RENT</span>
-			</span>
-		    </a>
-		    <div class="description">
-			<p>Appertment: <br>
-			  5111 140th<br>
-			  Ave NE Bellevue,<br>
-			  WA 98005 <br>
-			  <span class="price">$2100</span></p>
-		    </div>
-		  </li>
-		  <li>
-		    <a href="#">
-			<img src="images/related-property/image-3.jpg" height="106" width="165" alt="">
-			<span class="overflow">
-			  <span class="type">RENT</span>
-			</span>
-		    </a>
-		    <div class="description">
-			<p>Appertment: <br>
-			  5111 140th<br>
-			  Ave NE Bellevue,<br>
-			  WA 98005 <br>
-			  <span class="price">$2100</span></p>
-		    </div>
-		  </li>
-		  <li>
-		    <a href="#">
-			<img src="images/related-property/image-4.jpg" height="106" width="165" alt="">
-			<span class="overflow">
-			  <span class="type">RENT</span>
-			</span>
-		    </a>
-		    <div class="description">
-			<p>Appertment: <br>
-			  5111 140th<br>
-			  Ave NE Bellevue,<br>
-			  WA 98005 <br>
-			  <span class="price">$2100</span></p>
-		    </div>
-		  </li>
-
-		</ul>
-	    </div>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget  -->
-	  <div class="widget-1" id="widget-1-num-6">
-	    <h3 class="large-heading">Something <br>
-		about us!</h3>
-	    <span class="iconic iconic-info pink"></span>
-	    <p class="large-text-1">know more about us before commit</p>
-	    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget  -->
-	  <div class="widget-1" id="widget-1-num-7">
-	    <h3 class="large-heading">know your <br>
-		dream home!</h3>
-	    <span class="iconic iconic-user style-1"></span>
-	    <p class="large-text-1">know more about us before commit</p>
-	    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget  -->
-	  <div class="widget-1" id="widget-1-num-8">
-	    <h3 class="large-heading">find us <br>
-		anywhere!</h3>
-	    <span class="iconic iconic-search style-1"></span>
-	    <p class="large-text-1">know more about us before commit</p>
-	    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	  </div>
-	  <!-- widget // -->
-	  <!-- widget  -->
-	  <div class="widget-1" id="widget-1-num-9">
-	    <h3 class="large-heading">Our <br>
-		agents!</h3>
-	    <span class="iconic iconic-v-card pink"></span>
-	    <p class="large-text-1">know more about us before commit</p>
-	    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-	  </div>
-	  <!-- widget // -->
-	  <div class="sidebar-close-bar visible-xs-block">
-	    <a href="#" class="iconic iconic-close2"></a>
-	  </div>
-	</div>
-	<!-- sidebar // -->
-	<!-- Header  -->
-	<header class="main-header header-home" style="background-image: url(images/banner/banner-7.jpg)">
-	  <img src="images/banner/banner-7.jpg" height="707" width="1920" class="banner-img" alt="">
-	  <div class="header-content">
-	    <div class="navigation-bar"><div class="container">
-		  <div class="logo wow flipInX" data-wow-delay="200ms">
-		    <a href="index.jsp.html"><img src="images/logo.png" height="225" width="130" alt=""></a>
-		  </div>
-		  <div class="navigation">
-		    <a href="#" class="navigation-button" id="mobileNav">
-			<i class="iconic iconic-menu"></i>
-		    </a>
-		    <ul>
-			<li class="menu-item-has-children"><a href="#">Home</a>
-			  <ul class="sub-menu">
-			    <li><a href="index.jsp.html">Default Layout</a></li>
-			    <li><a href="home-2.html">Home v2</a></li>
-			    <li><a href="home-3.html">Home v3</a></li>
-			    <li><a href="home-4.html">Home v4</a></li>
-			  </ul>
-			</li>
-			<li class="menu-item-has-children"><a href="#">Properties</a>
-			  <ul class="sub-menu">
-			    <li><a href="property-list.html">Property List</a>
-				<ul class="sub-menu">
-				  <li><a href="property-list-sidebar-left.html">Sidebar Left</a></li>
-				  <li><a href="property-list-sidebar-right.html">Sidebar Right</a></li>
-				</ul>
-			    </li>
-			    <li><a href="property-details.html">Property Details</a></li>
-			  </ul>
-			</li>
-			<li class="menu-item-has-children"><a href="#">Pages</a>
-			  <ul class="sub-menu">
-			    <li><a href="page-layout-left-sidebar.html">Sidebar Left</a></li>
-			    <li><a href="page-layout-right-sidebar.html">Sidebar Right</a></li>
-			  </ul>
-			</li>
-			<li class="menu-item-has-children"><a href="#">Blog</a>
-			  <ul class="sub-menu">
-			    <li><a href="#">Blog List</a>
-				<ul class="dir-right">
-				  <li><a href="blog.html">Masonory Layout</a></li>
-				  <li><a href="blog-list-row.html">Single Row Layout</a></li>
-				</ul>
-			    </li>
-			    <li><a href="#">Blog Single Page</a>
-				<ul class="dir-right">
-				  <li><a href="blog-details.html">With image</a></li>
-				  <li><a href="blog-details-video.html">With Video</a></li>
-				</ul>
-			    </li>
-			  </ul>
-			</li>
-			<li><a href="agents.html">Agents</a>
-			  <ul>
-			    <li><a href="agents-details.html">Agent Details</a></li>
-			  </ul>
-			</li>
-			<li class="menu-item-has-children"><a href="#">ShortCodes</a>
-			  <ul class="sub-menu">
-			    <li><a href="#">Typography And Components</a>
-				<ul class="dir-right">
-				  <li><a href="page-typography.html">General Typography</a></li>
-				  <li><a href="page-heading.html">Heading</a></li>
-				  <li><a href="page-blockquote.html">Blockquote</a></li>
-				  <li><a href="page-boxshadow.html">Box Shadow</a></li>
-				  <li><a href="page-testimonials.html">Testimonials</a></li>
-				  <li><a href="page-tagline.html">Tagline Boxes</a></li>
-				  <li><a href="page-grid-layout.html">Grid Layout</a></li>
-				</ul>
-			    </li>
-			    <li><a href="page-buttons.html">Buttons UI</a>
-			    </li>
-			    <li><a href="page-icons.html">Icons</a>
-			    </li>
-			  </ul>
-			</li>
-			<li class="menu-item-has-children"><a href="#">Misc</a>
-			  <ul class="dir-right level-1 sub-menu">
-			    <li><a href="#">Header</a>
-				<ul class="dir-right">
-				  <li><a href="header-v1.html">Header v1</a></li>
-				  <li><a href="header-v2.html">Header v2</a></li>
-				  <li><a href="banner-slider.html">Header Slider v1</a></li>
-				  <li><a href="banner-slider-with-caption.html">Header Slider v2</a></li>
-				</ul>
-			    </li>
-			    <li><a href="page-footer-v1.html">Footer</a></li>
-			  </ul>
-			</li>
-		    </ul>
-
-		  </div>
-		  <div class="info wow bounceInUp animated" data-wow-delay="1s">
-		    <span class="type"><span class="text">Rent</span></span>
-		    <div class="description">
-			<p class="title">1102 5th St Kirkland,
-			  WA 98033
-			</p>
-			<p class="meta"><span class="meta-block">Bed : 3</span>
-			  <span class="meta-block">Parking : 1 </span>
-			  <span class="meta-block">Bath : 2</span>
-			  <span class="meta-block">1500 sq ft</span>
-			</p>
-		    </div>
-		    <div class="price">
-			<p class="rate">$3500</p>
-			<p><a href="#" class="btn btn-default btn-sm hvr-shutter-out-vertical">View property</a></p>
-		    </div>
-		  </div>
-		</div>
-
-	    </div>
-	  </div>
-	</header>
-	<!-- Header // -->
-
-	<!-- Content Section -->
-	<section class="content-section">
-	  <div class="container">
-	    <div class="title-row heading">
-		<div class="col-md-12">
-		  <h2>Your dream <br>
-		    homes</h2>
-		  <p>Your search result IS listed here</p>
-		  <span class="iconic iconic-search"></span>
-		</div>
-	    </div>
-	    <div class="content-box">
-		<div class="col-md-12">
-		  <p class="content-info"><span class="iconic iconic-grid"></span>Grid view</p>
-		</div>
-		<!-- Grid view -->
-		<div class="grid-box-all row-float pad-top-large">
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="500ms">
-		    <div class="image">
-			<span class="box-type"><span class="text">Sale</span></span>
-			<img src="images/property/home-1.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="600ms">
-		    <div class="image">
-			<span class="box-type"><span class="text">Rent</span></span>
-			<img src="images/property/home-2.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="700ms">
-		    <div class="image">
-			<span class="box-type red"><span class="text">Rent</span></span>
-			<img src="images/property/home-3.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="500ms">
-		    <div class="image">
-			<span class="box-type"><span class="text">Sale</span></span>
-			<img src="images/property/home-1.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="600ms">
-		    <div class="image">
-			<span class="box-type"><span class="text">Rent</span></span>
-			<img src="images/property/home-2.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-		  <div class="grid-box wow fadeInUp2" data-wow-delay="700ms">
-		    <div class="image">
-			<span class="box-type red"><span class="text">Rent</span></span>
-			<img src="images/property/home-3.jpg" alt="" height="234" width="360">
-		    </div>
-		    <div class="description">
-			<h3><span class="type">Appertment:</span>
-			  5111 140th Ave NE Bellevue,
-			  WA 98005</h3>
-			<p class="meta-list"><span class="meta">Bed : 3</span>
-			  <span class="meta"> Parking : 1 </span>
-			  <span class="meta">   Bath : 1 </span>
-			  <span class="meta">   1500 sq ft</span></p>
-			<span class="price">$75000</span>
-			<a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		    </div>
-		  </div>
-
-		</div>
-		<!-- Grid view // -->
-		<div class="col-xs-12 pad-top-large">
-		  <p class="content-info"><span class="iconic iconic-menu"></span>list view</p>
-		</div>
-		<!-- List view -->
-		<div class="list-view-all row-float">
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type">Sale</span>
-			  <img src="images/property-list/home-1.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type">Sale</span>
-			  <img src="images/property-list/home-1.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-1.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-1.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type">Sale</span>
-			  <img src="images/property-list/home-2.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-3.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-4.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-5.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		  <div class="grid-list">
-		    <div class="background">
-			<a class="image" href="#">
-			  <span class="box-type red">Rent</span>
-			  <img src="images/property-list/home-6.jpg" alt="">
-			</a>
-			<div class="description">
-			  <h3><span class="type">Appertment:</span>
-			    5111 140th Ave NE Bellevue,
-			    WA 98005</h3>
-			  <span class="price">$75000</span>
-			</div>
-		    </div>
-		  </div>
-		</div>
-		<div class="pad-top-small col-xs-12">
-		  <a href="#" class="btn btn-danger btn-large pull-right hvr-shutter-out-vertical">View more results</a>
-		</div>
-	    </div>
-	  </div>
-	</section>
-	<!-- Content Section // -->
-	<!-- Content Section  -->
-	<div class="content-section">
-	  <div class="container">
-	    <div class="background">
-		<div class="col-md-3">
-		  <div class="title-row heading pad-top-large">
-		    <h2>something <br>
-			about us!
-		    </h2>
-		    <p>know more about us before YOU commit</p>
-		    <span class="iconic iconic-user2 pink"></span>
-		  </div>
-		  <img  src="images/icons/icon-home.png" height="227" width="207" alt="">
-		</div>
-		<div class="col-md-6 col-md-push-1">
-		  <div class="heading pad-top-large">
-		    <h4>Dream Homes</h4>
-		  </div>
-		  <div class="contents">
-		    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-		    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-		    <div class="social-links pad-top-large">
-			<a href="#" class="iconic iconic-twitter wow fadeInDown" data-wow-duration="1700ms"></a>
-			<a href="#" class="iconic iconic-dribbble wow fadeInDown" data-wow-duration="1800ms"></a>
-			<a href="#" class="iconic iconic-facebook wow fadeInDown" data-wow-duration="1900ms"></a>
-			<a href="#" class="iconic iconic-google-plus wow fadeInDown" data-wow-duration="2100ms"></a>
-		    </div>
-		  </div>
-		</div>
-	    </div>
-	  </div>
-	</div>
-	<!-- Content Section // -->
-	<!-- Content Section  -->
-	<section class="content-section content-table">
-	  <div class="container">
-	    <div class="title-row heading">
-		<div class="col-sm-12">
-		  <h2>know your <br>
-		    dream home!
-		  </h2>
-		  <p>blog about latest real estate news</p>
-		  <span class="iconic iconic-home"></span>
-		</div>
-	    </div>
-	    <div class="row pad-top-large">
-		<div class="col-sm-12">
-		  <div class="content-back row-float">
-		    <div class="col-md-5 content-table-image">
-			<img src="images/interrior/room-1.jpg" height="541" width="473" alt="">
-		    </div>
-		    <div class="col-md-7 pull-right contents grid-gap-large">
-			<div class="heading pad-top-large">
-			  <h5><a href="#">INSTAGRAM PHOTOS IN MY BEDROOM
-				+ $100 GIVEAWAY</a></h5>
-			</div>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure </p>
-			<div class="meta pad-top-large pad-bottom-small">
-			  <span class="meta-list2">
-			    <span class="meta"><span class="iconic iconic-heart"></span>1129 likes</span>
-			    <span class="meta"><span class="iconic iconic-mode-comment"></span>78 comments</span>
-			  </span>
-			</div>
-		    </div>
-		    <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-		  </div>
-		</div>
-	    </div>
-	  </div>
-	</section>
-	<!-- Content Section //  -->
-	<!-- Content Section  -->
-	<section class="content-section">
-	  <div class="container">
-	    <div class="background">
-		<div class="col-md-4">
-		  <div class="title-row heading">
-		    <div class="col-sm-12">
-			<h2>find us <br>
-			  anywhere!
-			</h2>
-			<p>with your smart phone and tablets</p>
-			<span class="iconic iconic-mobile"></span>
-		    </div>
-		  </div>
-		</div>
-		<div class="col-md-8">
-		  <div class="row">
-		    <div class="col-md-3"><img src="images/components/mobile.png" height="572" width="205" alt=""></div>
-		    <div class="col-md-9">
-			<div class="heading pad-top-large">
-			  <h4>Download
-			    our latest app</h4>
-			</div>
-			<div class="contents">
-			  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-			  <p><a href="#" class="btn btn-large btn-ghost hvr-shutter-out-vertical">Download now</a></p>
-			</div>
-		    </div>
-		  </div>
-		</div>
-	    </div>
-	  </div>
-	</section>
-	<!-- Content Section // -->
-	<!-- Team -->
-	<section class="content-section">
-	  <div class="container">
-	    <div class="title-row heading">
-		<div class="col-md-12">
-		  <h2>Our <br>
-		    agents!</h2>
-		  <p>who guide you to find the best homes</p>
-		  <span class="iconic iconic-v-card pink"></span>
-		</div>
-	    </div>
-	    <div class="row pad-top-large">
-		<div class="agents">
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-1.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-2.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-3.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-4.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-5.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-6.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		</div>
-		<div class="agents">
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-1.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-2.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-3.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-4.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-5.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		  <div class="agent">
-		    <div class="data">
-			<img src="images/agents/agent-6.jpg" alt="" height="172" width="157">
-			<div class="meta">
-			  <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-			</div>
-		    </div>
-		  </div>
-		</div>
-
-
-	    </div>
-	  </div>
-	</section>
-	<!-- Team // -->
-	<!-- Footer -->
-	<footer class="main-footer">
-	  <div class="container">
-	    <div class="row">
-		<!-- Widget 1 -->
-		<div class="footer-widgets-1">
-		  <div class="logo-footer-row">
-		    <div class="logo-footer">
-			<a href="index.jsp.html"><img src="images/logo-footer.png"  alt=""></a>
-		    </div>
-		    <img class="logo-tag" src="images/svg/logo-text.png" alt="">
-		  </div>
-		  <div class="row">
-		    <div class="col-xs-12 widget-content">
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words </p>
-			<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-		    </div>
-		  </div>
-		</div>
-		<!-- Widget 1 // -->
-		<!-- Widget 2 -->
-		<div class="footer-widgets-2">
-		  <div class="row">
-		    <div class="col-lg-6">
-			<ul>
-			  <li><a href="#">
-				<img src="images/footer/home-1.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-2.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-3.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-4.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-5.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			</ul>
-		    </div>
-		    <div class="col-lg-6">
-			<ul>
-			  <li><a href="#">
-				<img src="images/footer/home-1.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-2.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-3.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-4.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			  <li><a href="#">
-				<img src="images/footer/home-5.jpg" height="56" width="72" alt="">
-				<span class="description">APARTMENT: <br>
-				  5111 140th Ave NE Bellevue, WA 98005</span>
-				<span class="price">$2100</span>
-			    </a></li>
-			</ul>
-		    </div>
-		  </div>
-
-		</div>
-		<!-- Widget 2 // -->
-		<!-- Widget 3  -->
-		<div class="footer-widgets-3">
-		  <div class="widget">
-		    <h5>Contact</h5>
-		    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-		    <form data-parsley-validate class="footer-contact">
-			<div class="form-group">
-			  <input type="text" placeholder="Name" class="form-control"  required data-parsley-required-message="Please insert your name" name="name">
-			</div>
-			<div class="form-group">
-			  <input type="email" placeholder="Email ID" class="form-control" required data-parsley-required-message="Please insert your name" name="email">
-			</div>
-			<div class="form-group">
-			  <button class="pull-right btn btn-ghost hvr-shutter-out-vertical">Submit</button>
-			</div>
-			<div class="form-messges hideen"></div>
-		    </form>
-		  </div>
-		  <div class="widget">
-		    <h5>Subscribe Newsletter</h5>
-		    <div class="form-group has-feedback newsletter-form">
-			<form class="newsletter-form" data-parsley-validate>
-			  <input type="hidden" name="name" placeholder="" value="">
-			  <input type="email" class="form-control" placeholder="Email ID" name="email" required>
-			  <button class="iconic iconic-arrow-right form-control-feedback btn btn-ghost"></button>
-			  <div class="form-messges"></div>
-			</form>
-		    </div>
-
-		  </div>
-		</div>
-		<!-- Widget 3 // -->
-
-	    </div>
-	  </div>
-	</footer>
-	<!-- Footer // -->
-	<!-- Footer 2 -->
-	<footer class="footer-sub">
-	  <div class="container">
-	    <div class="footer-text-1"><p>© 2014 Dream Homes</p></div>
-	    <div class="footer-text-2 text-right"><p>Design by <a href="http://0effortthemes.com/">0effortthemes</a></p></div>
-	  </div>
-	</footer>
-    </div>
-    <a href="#" class="PagescrollToTop iconic iconic-arrow-up3" title="Go To Top"></a>
-
-    <script src="js/vendor/vendor.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="mainNavigation">              
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-map.html">Home - Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Properties</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="listing-grid.html">Listing Grid</a></li>
+                                <li><a href="listing-list.html">Listing List</a></li>
+                                <li><a href="listing-details.html">Listing Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submit New</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="submit-property.html">Property Info</a></li>
+                                <li><a href="submit-property.html">Add Photo Gallery</a></li>
+                                <li><a href="submit-property.html">Amenities</a></li>
+                                <li><a href="submit-property.html">Google Map Locaion</a></li>
+                                <li><a href="submit-property.html">Additional Details</a></li>
+                                <li>
+                                    <a href="#">Users</a>
+                                    <ul>
+                                        <li><a href="submit-property.html">Existing User</a></li>
+                                        <li><a href="submit-property.html">Owner Info</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Agents</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="agents.html">Agents</a></li>
+                                <li><a href="agent-details.html">Agents Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog2col.html">Blog 2 Collumn</a></li>
+                                <li><a href="blog3col.html">Blog 3 Collumn</a></li>
+                                <li><a href="single-post.html">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header> <!--Header End-->
+    
+    <section id="slider" class="row">
+        <div class="flexslider mainSlider" id="mainSlider">
+            <ul class="slides">
+                <li>
+                    <img src="images/slides/1.jpg" alt="">
+                    <div class="row m0 captions">
+                        <div class="container">
+                            <div class="row m0">
+                                1/47 New York Avenue, Warners Bay, NSW 2282
+                                <span>$359.000</span>
+                                <a href="listing-details.html"><i class="fa fa-file-text-o"></i>details</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slides/1.jpg" alt="">
+                    <div class="row m0 captions">
+                        <div class="container">
+                            <div class="row m0">
+                                1/37 New York Avenue, Warners Bay, NSW 2282
+                                <span>$359.000</span>
+                                <a href="listing-details.html"><i class="fa fa-file-text-o"></i>details</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slides/1.jpg" alt="">
+                    <div class="row m0 captions">
+                        <div class="container">
+                            <div class="row m0">
+                                1/57 New York Avenue, Warners Bay, NSW 2282
+                                <span>$359.000</span>
+                                <a href="listing-details.html"><i class="fa fa-file-text-o"></i>details</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </section> <!--Slider End-->
+    
+    <section id="search" class="row homepage_search">
+        <div class="container">
+            <form action="#" class="searchForm media" role="search" method="get">
+                <div class="formTitle media-left media-middle"><span>find your</span><br>House</div>
+                <div class="media-body form_elements">
+                    <div class="fleft form_element">
+                        <label for="propertyType">Property type</label>
+                        <select name="" id="propertyType" class="selectpicker propertyType">
+                            <option value="any" selected>any</option>
+                            <option value="home">Home</option>
+                            <option value="resort">Resort</option>
+                            <option value="land">Land</option>
+                            <option value="restrurent">Restrurent</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="propertyLocation">Location</label>
+                        <select name="" id="propertyLocation" class="selectpicker propertyLocation">
+                            <option value="any" selected>any</option>
+                            <option value="new york">New York</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="kosovo">Kosovo</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="beds">Beds</label>
+                        <select name="" id="beds" class="selectpicker beds">
+                            <option value="any" selected>any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="baths">Baths</label>
+                        <select name="" id="baths" class="selectpicker baths">
+                            <option value="any" selected>any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="sq-ft">Sq ft</label>
+                        <select name="" id="sq-ft" class="selectpicker sq-ft">
+                            <option value="any" selected>any</option>
+                            <option value="1">1000 sf</option>
+                            <option value="2">2000 sf</option>
+                            <option value="3">2500 sf</option>
+                            <option value="4">3700 sf</option>
+                            <option value="5">4200 sf</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="min_price">min price</label>
+                        <select name="" id="min_price" class="selectpicker min_price">
+                            <option value="any" selected>any</option>
+                            <option value="1">$200</option>
+                            <option value="2">$1000</option>
+                            <option value="3">$1500</option>
+                            <option value="4">$2000</option>
+                            <option value="5">$3000</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="max_price">max price</label>
+                        <select name="" id="max_price" class="selectpicker max_price">
+                            <option value="any" selected>any</option>
+                            <option value="1">$3000</option>
+                            <option value="2">$10000</option>
+                            <option value="3">$20000</option>
+                            <option value="4">$30000</option>
+                            <option value="5">$40000</option>
+                            <option value="5">$50000</option>
+                            <option value="5">$100000</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <button class="btn btn-default" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>            
+        </div>
+    </section> <!--Search Form-->
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Estate Pro Services</h2>
+            <div class="row">
+                <div class="col-sm-3 service_block">
+                    <div class="row m0 inner">
+                        <div class="row m0 block_title">Property Management</div>
+                        <div class="row m0 block_icon"><i class="fa fa-home"></i></div>
+                        <a href="#" class="read_more">+ read more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 service_block">
+                    <div class="row m0 inner">
+                        <div class="row m0 block_title">Free Market Analysis</div>
+                        <div class="row m0 block_icon"><i class="fa fa-line-chart"></i></div>
+                        <a href="#" class="read_more">+ read more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 service_block">
+                    <div class="row m0 inner">
+                        <div class="row m0 block_title">sale services</div>
+                        <div class="row m0 block_icon"><i class="fa fa-ticket"></i></div>
+                        <a href="#" class="read_more">+ read more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 service_block">
+                    <div class="row m0 inner">
+                        <div class="row m0 block_title">renting services</div>
+                        <div class="row m0 block_icon"><i class="fa fa-angellist"></i></div>
+                        <a href="#" class="read_more">+ read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Recent Listing</h2>
+            <div class="row">
+                <div class="col-sm-4 listing_grid">
+                    <div class="info_content row">
+                        <div class="row m0 imageRow">
+                            <img src="images/listing/1.jpg" alt="">
+                            <div class="saleTag">For Sale</div>
+                        </div>
+                        <div class="row m0 description">
+                            <div class="row m0 priceRow">
+                                <div class="price fleft">$250,000</div>
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--Grid Listing-->
+                <div class="col-sm-4 listing_grid">
+                    <div class="info_content row">
+                        <div class="row m0 imageRow">
+                            <img src="images/listing/2.jpg" alt="">
+                            <div class="saleTag rentTag">For Rent</div>
+                        </div>
+                        <div class="row m0 description">
+                            <div class="row m0 priceRow">
+                                <div class="price fleft">$1250 / month</div>
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">New York Avenue, Warners Bay</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--Grid Listing-->
+                <div class="col-sm-4 listing_grid">
+                    <div class="info_content row">
+                        <div class="row m0 imageRow">
+                            <img src="images/listing/3.jpg" alt="">
+                            <div class="saleTag">For Sale</div>
+                        </div>
+                        <div class="row m0 description">
+                            <div class="row m0 priceRow">
+                                <div class="price fleft">$250,000</div>
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--Grid Listing-->
+            </div>
+        </div>
+    </section> <!--Listing -->
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Our Partners</h2>
+            <div class="row">
+                <div class="owl-carousel agents_carousel owl_carousel_home">
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/1.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">David Walter</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/2.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">John Smith</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/3.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">George Hammer</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/4.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">Paul Dark</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/5.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">David Walter</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/6.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">John Smith</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/7.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">George Hammer</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/8.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">Paul Dark</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/9.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">David Walter</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/10.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">John Smith</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/11.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">George Hammer</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/12.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">Paul Dark</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/13.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">David Walter</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/14.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">John Smith</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/15.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">George Hammer</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item agent">
+                        <div class="row m0">
+                            <div class="row m0 imageRow">
+                                <img src="images/agents/16.jpg" alt="" class="img-responsive">
+                                <ul class="nav">
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="row m0 agent_details">
+                                <div class="row m0 phoneNumber"><i class="fa fa-phone-square"></i>900 123 456 789 00</div>
+                                <div class="row m0 inner">
+                                    <a href="agent-details.html">Paul Dark</a>
+                                    <span class="phone_trigger">
+                                        <i class="fa fa-phone-square"></i>
+                                        <i class="fa fa-long-arrow-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Agent Block-->                    
+                </div>
+            </div>
+        </div>
+    </section> <!--Agents Slider-->
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Our Partners</h2>
+            <div class="row">
+                <div class="owl-carousel partners_carousel owl_carousel_home">
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/1.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/2.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/3.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/4.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/1.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/2.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/3.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                    <div class="item partner">
+                        <div class="row m0 inner">
+                            <img src="images/partners/4.png" alt="">
+                        </div>
+                    </div> <!--Agent Block-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Latest News</h2>
+            <div class="row">
+                <div class="col-sm-4 blog">
+                    <div class="row m0 inner">
+                        <div class="row m0 imageRow">
+                            <img src="images/blog/1.jpg" alt="">
+                            <div class="meta_row row m0">
+                                <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                            </div>
+                        </div>
+                        <div class="row m0 desc">
+                            <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                        </div>
+                    </div>
+                </div> <!--blog-->
+                <div class="col-sm-4 blog">
+                    <div class="row m0 inner">
+                        <div class="row m0 imageRow">
+                            <img src="images/blog/2.jpg" alt="">
+                            <div class="meta_row row m0">
+                                <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                            </div>
+                        </div>
+                        <div class="row m0 desc">
+                            <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                        </div>
+                    </div>
+                </div> <!--blog-->
+                <div class="col-sm-4 blog">
+                    <div class="row m0 inner">
+                        <div class="row m0 imageRow">
+                            <img src="images/blog/3.jpg" alt="">
+                            <div class="meta_row row m0">
+                                <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                            </div>
+                        </div>
+                        <div class="row m0 desc">
+                            <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                        </div>
+                    </div>
+                </div> <!--blog-->
+            </div>
+        </div>
+    </section> <!--Latest News-->
+    
+    <section class="row pt70">
+        <div class="container">
+            <h2 class="section_title">Client Testimonials</h2>
+            <div class="row">
+                <div class="owl-carousel testimonial_carousel owl_carousel_home">
+                    <div class="item">
+                        <div class="row m0 clientsImage"><img src="images/client.png" alt="John Smith, CEO at Evanto"></div>
+                        <div class="row m0 clientDetails">John Smith, CEO at Evanto</div>
+                        <img src="images/arrow_down.png" alt="" class="arrow_down">
+                        <div class="row m0 testimonial_texts">
+                            <div class="inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row m0 clientsImage"><img src="images/client.png" alt="John Smith, CEO at Evanto"></div>
+                        <div class="row m0 clientDetails">John Smith, CEO at Evanto</div>
+                        <img src="images/arrow_down.png" alt="" class="arrow_down">
+                        <div class="row m0 testimonial_texts">
+                            <div class="inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</div>
+                        </div>                        
+                    </div>
+                    <div class="item">
+                        <div class="row m0 clientsImage"><img src="images/client.png" alt="John Smith, CEO at Evanto"></div>
+                        <div class="row m0 clientDetails">John Smith, CEO at Evanto</div>
+                        <img src="images/arrow_down.png" alt="" class="arrow_down">
+                        <div class="row m0 testimonial_texts">
+                            <div class="inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row m0 clientsImage"><img src="images/client.png" alt="John Smith, CEO at Evanto"></div>
+                        <div class="row m0 clientDetails">John Smith, CEO at Evanto</div>
+                        <img src="images/arrow_down.png" alt="" class="arrow_down">
+                        <div class="row m0 testimonial_texts">
+                            <div class="inner">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row pt70 footerBanner">
+        <div class="row m0 inner">
+            <div class="container">
+                <div class="row">
+                    <img src="images/foot-brand.png" alt="footer banner" class="img-responsive fleft property">
+                    <div class="fleft banner_texts">
+                        <h2>Sell <span>or</span> Rent</h2>
+                        <h3>Your Property</h3>                        
+                    </div>
+                    <a href="#" class="sell_rent_link fright">click here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 widget recentPostWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Recent Posts</h4>
+                        <ul class="nav">
+                            <li><a href="single-post.html">New Search Platform Update</a></li>
+                            <li><a href="single-post.html">Envato's Most Wanted - $5,000 for Ghost Themes</a></li>
+                            <li><a href="single-post.html">Update: WordPress Theme Submission Requirements</a></li>
+                            <li><a href="single-post.html">Envato Staff Vs Community Nike+ competition</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget aboutWidget">
+                    <div class="row m0 widgetInner">
+                        <a href="index.html"><img src="images/logos/footer.png" alt=""></a>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, <br><br>Nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget oppeningHoursWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Opening Hours</h4>
+                        <ul class="nav">
+                            <li>Make a Call</li>
+                            <li>90 1234 5678 9012</li>
+                            <li>Send us an Email</li>
+                            <li>estatepro@domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightRow row">
+                <div class="col-sm-5 copyright">© 2015 <a href="index.html">Estate Pro</a>,  All Rights Reserved</div>
+                <div class="col-sm-2 goTop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
+                <div class="col-sm-5 footSocial">
+                    <ul class="nav nav-pills fright">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--jQuery, Bootstrap and other vendor JS-->
+    
+    <!--jQuery-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Owl Carousel-->
+    <script src="vendors/owl.carousel/js/owl.carousel.min.js"></script>
+    
+    <!--Bootstrap Select-->
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+    <!--FlexSlider-->
+    <script src="vendors/flexslider/jquery.flexslider-min.js"></script>
+    
+    <!--Strella JS-->
+    <script src="js/estate-pro.js"></script>
+</body>
 </html>

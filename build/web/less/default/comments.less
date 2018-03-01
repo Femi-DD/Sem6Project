@@ -1,0 +1,151 @@
+/*Comments*/
+.comments{
+    background: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    h3{
+        font-family: @baseFont3;
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        color: @baseColor5;
+    }
+    .commentDisplay{
+        .comment{
+            &+ .comment{
+                margin-top: 30px;
+            }
+            .media-left{
+                padding-right: 20px;
+                a{
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .media-body{
+                color: #a3a3a3;
+                font-size: 14px;
+                font-family: @baseFont3;
+                font-weight: 300;
+                .commenterNtime{
+                    color: #d1d1d1;
+                    border-bottom: 1px solid #e5e5e5;;
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    margin-bottom: 7px;
+                    font-size: 14px;
+                    a{
+                        color: #3c3c3c;
+                        display: inline-block;
+                        &:after{
+                            content: "/";
+                            width: 25px;
+                            display: inline-block;
+                            color: #e5e5e5;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .commentreply{
+            &.commentreply2{
+                padding-left: 100px;
+            }
+            &.commentreply3{
+                padding-left: 200px;
+            } 
+        }
+    } 
+}
+
+.commentForm{    
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    h3{
+        font-family: @baseFont3;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: @baseColor5;
+    }
+    form{
+        .commenterInfoInputs{
+            padding-right: 10px;            
+        }
+        .input-group{
+            width: 100%;
+            margin-bottom: 10px;            
+            span{
+                border-radius: 0;
+                height: 56px;
+                border-color: #efefef;
+                background: #FFF;
+                i{
+                    height: 32px;
+                    width: 32px;
+                    line-height: 28px;
+                    border: 1px solid @baseColor;
+                    color: @baseColor;
+                    border-radius: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+            input{
+                font-family: @baseFont3;
+                border-color: #efefef;
+                border-radius: 0;
+                height: 56px;
+                padding-left: 15px;
+                box-shadow: none;
+            }
+            label.error{
+                border: 1px solid #efefef;
+                border-top: 0;
+                padding: 5px;
+                width: 100%;
+                margin: 0;
+                font-family: @baseFont;
+                font-weight: normal;
+                color: @baseColor;
+            }
+            textarea{
+                border-color: #efefef;
+                height: 122px;
+                padding: 10px 15px;
+                border-radius: 0;
+                box-shadow: none;                
+                @media(max-width:767px){
+                    margin-top: 10px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        button{
+            line-height: 56px;
+            border-radius: 0;
+            border:0;
+            background: @baseColor;
+            padding: 0;
+            width: 100%;
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: 300;            
+            letter-spacing: 0.5px;
+            text-shadow: none;
+            &:hover{
+                background: @baseColor3;
+                color: #FFF;
+            }
+        }
+    } 
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estate Pro</title>
+    
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.min.css">    
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/flexslider/flexslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap-select/css/bootstrap-select.min.css" media="screen" />
+    
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="default">
+    
+    <header class="row">
+        <div class="row m0 topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 social_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 top_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-user"></i> login</a></li>
+                            <li><a href="#"><i class="fa fa-pencil"></i> register</a></li>
+                            <li>
+                                <div class="input-group-btn currencyFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue">&#36;</span> Currency
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">&#36;</span> usd</a></li>
+                                        <li><a href="#"><span class="value">&#163;</span> pound</a></li>
+                                        <li><a href="#"><span class="value">&#165;</span> yen</a></li>
+                                        <li><a href="#"><span class="value">&#8364;</span> euro</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group-btn languageFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue2">en</span> language
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">en</span> english</a></li>
+                                        <li><a href="#"><span class="value">bn</span> bengali</a></li>
+                                        <li><a href="#"><span class="value">de</span> German</a></li>
+                                        <li><a href="#"><span class="value">nl</span> Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation">
+                        <i class="fa fa-bars"></i> Menu
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="mainNavigation">              
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-map.html">Home - Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Properties</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="listing-grid.html">Listing Grid</a></li>
+                                <li><a href="listing-list.html">Listing List</a></li>
+                                <li><a href="listing-details.html">Listing Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submit New</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="submit-property.html">Property Info</a></li>
+                                <li><a href="submit-property.html">Add Photo Gallery</a></li>
+                                <li><a href="submit-property.html">Amenities</a></li>
+                                <li><a href="submit-property.html">Google Map Locaion</a></li>
+                                <li><a href="submit-property.html">Additional Details</a></li>
+                                <li>
+                                    <a href="#">Users</a>
+                                    <ul>
+                                        <li><a href="submit-property.html">Existing User</a></li>
+                                        <li><a href="submit-property.html">Owner Info</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Agents</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="agents.html">Agents</a></li>
+                                <li><a href="agent-details.html">Agents Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog2col.html">Blog 2 Collumn</a></li>
+                                <li><a href="blog3col.html">Blog 3 Collumn</a></li>
+                                <li><a href="single-post.html">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header> <!--Header End-->
+    <!--Common Area End-->
+    
+    <!--Content Area Begin-->
+    
+    <section class="row pageCover">
+        <div class="container">
+            <div class="row m0">
+                <div class="fleft page_name">Our Blog</div>
+                <div class="fright page_dir">
+                    <ul class="list-inline">
+                        <li><a href="index.html">home</a></li>
+                        <li>our blog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row contentRow blogWsidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 blogCol">
+                    <div class="row">
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/1.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/2.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/3.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/4.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/5.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                        <div class="col-sm-6 blog">
+                            <div class="row m0 inner">
+                                <div class="row m0 imageRow">
+                                    <img src="images/blog/6.jpg" alt="">
+                                    <div class="meta_row row m0">
+                                        <a href="#" class="comments"><i class="fa fa-comment-o"></i>6 comments</a>
+                                        <a href="#" class="date"><i class="fa fa-calendar"></i>01 Feb</a>
+                                    </div>
+                                </div>
+                                <div class="row m0 desc">
+                                    <a href="single-post.html"><h4 class="blogtitle">Marketplaces Rails 3 Upgrade...</h4></a>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auconsequat... <a href="single-post.html" class="read_more">[ read more ]</a></p>
+                                </div>
+                            </div>
+                        </div> <!--blog-->
+                    </div>           
+                    <nav class="row m0 paginationRow">
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
+                    </nav>                    
+                </div>
+                <div class="col-sm-4 sidebar">
+                    <form action="#" class="row m0 searchForm widget">
+                        <h4>Search</h4>
+                        <div class="input-group">
+                          <input type="search" class="form-control" placeholder="Search here...">
+                          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        </div>
+                    </form>
+                    <div class="row m0 widget postTabWidget">
+                        <div class="row m0">
+                            <ul class="nav nav-tabs nav-justified" role="tablist" id="postTab">
+                              <li role="presentation" class="active"><a href="#popular-post" aria-controls="popular-post" role="tab" data-toggle="tab">Popular</a></li>
+                              <li role="presentation"><a href="#recent-post" aria-controls="recent-post" role="tab" data-toggle="tab">Recent</a></li>
+                              <li role="presentation"><a href="#recent-comment" aria-controls="recent-comment" role="tab" data-toggle="tab">Comments</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="popular-post">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp1.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp2.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp3.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="recent-post">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp1.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp2.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp3.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="recent-comment">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp1.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp2.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="single-post.html"><img src="images/sidebar/pp3.jpg" alt="" class="media-object img-responsive"></a>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <a href="single-post.html"><h5 class="blogTitle">Envato’s Most Wanted: Courses & Learning Themes - $7,000</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m0 widget tagsWidget">
+                        <h4>Tags</h4>
+                        <div class="tags">
+                            <a href="#" class="tag">photography</a>
+                            <a href="#" class="tag">logo</a>
+                            <a href="#" class="tag">house</a>
+                            <a href="#" class="tag">wp</a>
+                            <a href="#" class="tag">photography</a>
+                            <a href="#" class="tag">photography</a>
+                            <a href="#" class="tag">travelling</a>
+                            <a href="#" class="tag">sports</a>
+                            <a href="#" class="tag">business</a>
+                            <a href="#" class="tag">racing</a>
+                        </div>
+                    </div>
+                    <div class="row m0 widget textWidget">
+                        <h4>Text Widget</h4>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum <br><br>auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <!--Content Area End-->
+    
+    <!--Another Common Area-->
+    <section class="row pt70 footerBanner">
+        <div class="row m0 inner">
+            <div class="container">
+                <div class="row">
+                    <img src="images/foot-brand.png" alt="footer banner" class="img-responsive fleft property">
+                    <div class="fleft banner_texts">
+                        <h2>Sell <span>or</span> Rent</h2>
+                        <h3>Your Property</h3>                        
+                    </div>
+                    <a href="#" class="sell_rent_link fright">click here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 widget recentPostWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Recent Posts</h4>
+                        <ul class="nav">
+                            <li><a href="single-post.html">New Search Platform Update</a></li>
+                            <li><a href="single-post.html">Envato's Most Wanted - $5,000 for Ghost Themes</a></li>
+                            <li><a href="single-post.html">Update: WordPress Theme Submission Requirements</a></li>
+                            <li><a href="single-post.html">Envato Staff Vs Community Nike+ competition</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget aboutWidget">
+                    <div class="row m0 widgetInner">
+                        <a href="index.html"><img src="images/logos/footer.png" alt=""></a>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, <br><br>Nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget oppeningHoursWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Opening Hours</h4>
+                        <ul class="nav">
+                            <li>Make a Call</li>
+                            <li>90 1234 5678 9012</li>
+                            <li>Send us an Email</li>
+                            <li>estatepro@domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightRow row">
+                <div class="col-sm-5 copyright">© 2015 <a href="index.html">Estate Pro</a>,  All Rights Reserved</div>
+                <div class="col-sm-2 goTop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
+                <div class="col-sm-5 footSocial">
+                    <ul class="nav nav-pills fright">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--jQuery, Bootstrap and other vendor JS-->
+    
+    <!--jQuery-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Owl Carousel-->
+    <script src="vendors/owl.carousel/js/owl.carousel.min.js"></script>
+    
+    <!--Bootstrap Select-->
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+    <!--FlexSlider-->
+    <script src="vendors/flexslider/jquery.flexslider-min.js"></script>
+    
+    <!--Strella JS-->
+    <script src="js/estate-pro.js"></script>
+</body>
+</html>

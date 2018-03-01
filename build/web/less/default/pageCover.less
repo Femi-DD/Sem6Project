@@ -1,0 +1,44 @@
+.pageCover{
+    height: 160px;
+    padding-top: 53px; 
+    background: url('../images/page-cover.jpg') no-repeat scroll center @baseColor3;
+    .page_name{
+        line-height: 50px;
+        font-family: @baseFont3;
+        font-weight: 300;
+        font-size: 18px;
+        padding: 0 15px;
+        border: 2px solid @baseColor;
+        color: #fff;
+    }
+    .page_dir{
+        ul{
+            li{
+                padding: 0;
+                color: #fff;
+                line-height: 50px;
+                font-size: 15px;
+                font-family: @baseFont3;
+                font-weight: 300;
+                a{
+                    color: #fff;
+                    font-family: @baseFont3;
+                    font-weight: 300;
+                }
+                &+ li{
+                    &:before{
+                        margin: 0 10px;
+                        content: "\f0a9";
+                        display: inline-block;
+                        font: normal normal normal 15px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+    }
+}

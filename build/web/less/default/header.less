@@ -1,0 +1,248 @@
+header{
+    .topHeader{
+        background: #fff;
+        border-bottom: 1px solid  #ededed;
+        .social_menu{
+            float: left;
+            ul{
+                margin: 0;
+                li{
+                    padding: 10px 12px;
+                    border-left: 1px solid  #f0f0f0;
+                    float: left;
+                    &:last-child{
+                        border-right: 1px solid  #f0f0f0;
+                    }
+                    a{
+                        padding: 0;
+                        display: block;
+                        line-height: 28px;
+                        width: 30px;
+                        border: 1px solid  #f0f0f0;
+                        border-radius: 100%;
+                        font-size: 15px;
+                        color: @baseColor2;
+                        text-align: center;
+                        i{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .top_menu{
+            float: right;
+            .list-inline{
+                float: right;
+                margin: 0;
+                li{
+                    padding: 10px 12px;
+                    border-left: 1px solid  #f0f0f0;
+                    float: left;
+                    position: relative;
+                    &:last-child{
+                        border-right: 1px solid  #f0f0f0;
+                    }
+                    a{
+                        display: block;
+                        line-height: 28px;
+                        padding: 0;                        
+                        font-size: 14px;                        
+                        color: @baseColor2;
+                        text-transform: capitalize;
+                        font-family: @baseFont3;
+                        i{
+                            width: 30px;
+                            border: 1px solid  #f0f0f0;
+                            border-radius: 100%;
+                            line-height: 28px;
+                            text-align: center;
+                            color: @baseColor;
+                            margin-right: 3px;
+                            font-size: 15px;
+                        }
+                    }
+                    .filterGroup{
+                        display: block;
+                        button{
+                            padding: 0;
+                            background: none;
+                            border: none;
+                            box-shadow: none;
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: @baseColor2;
+                            text-transform: capitalize;
+                            font-family: @baseFont3;
+                            span{
+                                width: 30px;
+                                border: 1px solid  #f0f0f0;
+                                border-radius: 100%;
+                                line-height: 28px;
+                                text-align: center;
+                                color: @baseColor;
+                                margin-right: 3px;
+                                font-size: 15px;
+                                display: inline-block;                                
+                                font-weight: 300;
+                            }
+                        }
+                        ul{
+                            z-index: 99999;
+                            top: 40px;
+                            margin: 0;
+                            border-radius: 0;
+                            padding: 0;
+                            border: 1px solid fade(@baseColor2,30%);
+                            position: absolute;
+                            right: -105px;
+                            box-shadow: none;
+                            li{
+                                width: 100%;
+                                border: none;
+                                padding: 0;
+                                & + li{
+                                    border-top: 1px solid fade(@baseColor2,30%);
+                                }
+                                a{
+                                    line-height: 40px;
+                                    padding: 0 15px;
+                                    span{
+                                        margin: 0;
+                                        &:after{
+                                            display: inline-block;
+                                            content: '-';
+                                            margin: 0 0 0 5px;
+                                        }
+                                    }
+                                    &:hover{
+                                        background: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{                        
+                        .filterGroup{
+                            button{
+                                span{                                    
+                                    font-size: 13px;
+                                    text-transform: uppercase;
+                                    background: @baseColor;
+                                    color: #fff;
+                                    font-family: @baseFont3;
+                                    font-weight: 300;
+                                }
+                            }
+                            ul{
+                                right: -110px;
+                                li{
+                                    a{
+                                        span{
+                                            &:after{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar{
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        background:none #f7f7f9;
+        .navbar-header{
+            margin: 0;
+            button{
+                i{}
+            }
+            .navbar-brand{
+                display: block;
+                padding:30px 0;
+                margin: 0;
+                height: auto;
+            }
+        }
+        #mainNavigation{
+            .nav{
+                margin-right: 0;
+                li{
+                    padding: 50px 0 43px;
+                    a{
+                        font-size: 15px;
+                        font-family: @baseFont3;
+                        text-transform: uppercase;
+                        padding: 0 17px;
+                        line-height: 40px;
+                        border: 1px solid transparent;
+                        color: @baseColor2;
+                        text-shadow: none;
+                        &:hover,&:focus{
+                            color: @baseColor;
+                            border-color: @baseColor;
+                        }
+                    }
+                    &.active{
+                        a{
+                            color: @baseColor;
+                            border-color: @baseColor;
+                            background: none;
+                            box-shadow: none;
+                        }
+                    }
+                    &.dropdown,&.active,&.open{
+                        .dropdown-menu{
+                            border: 1px solid fade(@baseColor,30%);
+                            padding: 0;
+                            border-radius: 0;
+                            li{
+                                position: relative;
+                                padding: 0;
+                                a{
+                                    border: none;
+                                    color: @baseColor2;                                    
+                                    &:hover{
+                                        background: none;
+                                        color: @baseColor;
+                                    }
+                                }
+                                &+ li{
+                                    border-top: 1px solid fade(@baseColor,30%);
+                                }
+                                ul{
+                                    list-style: none;
+                                    position: absolute;
+                                    background: #fff;
+                                    top: -1px;
+                                    right: 100%;
+                                    padding: 0;
+                                    white-space: nowrap;
+                                    box-shadow: -6px 0px 12px rgba(0,0,0,0.175);
+                                    border: 1px solid fade(@baseColor,30%);
+                                    li{
+                                        a{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.open{
+                        a{
+                            background: none;
+                            box-shadow: none;
+                            color: @baseColor;
+                            border-color: fade(@baseColor,30%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

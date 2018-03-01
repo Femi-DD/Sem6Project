@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estate Pro</title>
+    
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.min.css">    
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/flexslider/flexslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap-select/css/bootstrap-select.min.css" media="screen" />
+    
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="default">
+    
+    <header class="row">
+        <div class="row m0 topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 social_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 top_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-user"></i> login</a></li>
+                            <li><a href="#"><i class="fa fa-pencil"></i> register</a></li>
+                            <li>
+                                <div class="input-group-btn currencyFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue">&#36;</span> Currency
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">&#36;</span> usd</a></li>
+                                        <li><a href="#"><span class="value">&#163;</span> pound</a></li>
+                                        <li><a href="#"><span class="value">&#165;</span> yen</a></li>
+                                        <li><a href="#"><span class="value">&#8364;</span> euro</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group-btn languageFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue2">en</span> language
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">en</span> english</a></li>
+                                        <li><a href="#"><span class="value">bn</span> bengali</a></li>
+                                        <li><a href="#"><span class="value">de</span> German</a></li>
+                                        <li><a href="#"><span class="value">nl</span> Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation">
+                        <i class="fa fa-bars"></i> Menu
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="mainNavigation">              
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-map.html">Home - Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Properties</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="listing-grid.html">Listing Grid</a></li>
+                                <li><a href="listing-list.html">Listing List</a></li>
+                                <li><a href="listing-details.html">Listing Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submit New</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="submit-property.html">Property Info</a></li>
+                                <li><a href="submit-property.html">Add Photo Gallery</a></li>
+                                <li><a href="submit-property.html">Amenities</a></li>
+                                <li><a href="submit-property.html">Google Map Locaion</a></li>
+                                <li><a href="submit-property.html">Additional Details</a></li>
+                                <li>
+                                    <a href="#">Users</a>
+                                    <ul>
+                                        <li><a href="submit-property.html">Existing User</a></li>
+                                        <li><a href="submit-property.html">Owner Info</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Agents</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="agents.html">Agents</a></li>
+                                <li><a href="agent-details.html">Agents Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog2col.html">Blog 2 Collumn</a></li>
+                                <li><a href="blog3col.html">Blog 3 Collumn</a></li>
+                                <li><a href="single-post.html">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header> <!--Header End-->
+    <!--Common Area End-->
+    
+    <!--Content Area Begin-->
+    
+    <section class="row pageCover">
+        <div class="container">
+            <div class="row m0">
+                <div class="fleft page_name">Listing</div>
+                <div class="fright page_dir">
+                    <ul class="list-inline">
+                        <li><a href="index.html">home</a></li>
+                        <li>listing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="search" class="row">
+        <div class="container">
+            <form action="#" class="searchForm media" role="search" method="get">
+                <div class="formTitle media-left media-middle"><span>find your</span><br>House</div>
+                <div class="media-body form_elements">
+                    <div class="fleft form_element">
+                        <label for="propertyType">Property type</label>
+                        <select name="" id="propertyType" class="selectpicker propertyType">
+                            <option value="any" selected>any</option>
+                            <option value="home">Home</option>
+                            <option value="resort">Resort</option>
+                            <option value="land">Land</option>
+                            <option value="restrurent">Restrurent</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="propertyLocation">Location</label>
+                        <select name="" id="propertyLocation" class="selectpicker propertyLocation">
+                            <option value="any" selected>any</option>
+                            <option value="new york">New York</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="kosovo">Kosovo</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="beds">Beds</label>
+                        <select name="" id="beds" class="selectpicker beds">
+                            <option value="any" selected>any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="baths">Baths</label>
+                        <select name="" id="baths" class="selectpicker baths">
+                            <option value="any" selected>any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="sq-ft">Sq ft</label>
+                        <select name="" id="sq-ft" class="selectpicker sq-ft">
+                            <option value="any" selected>any</option>
+                            <option value="1">1000 sf</option>
+                            <option value="2">2000 sf</option>
+                            <option value="3">2500 sf</option>
+                            <option value="4">3700 sf</option>
+                            <option value="5">4200 sf</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="min_price">min price</label>
+                        <select name="" id="min_price" class="selectpicker min_price">
+                            <option value="any" selected>any</option>
+                            <option value="1">$200</option>
+                            <option value="2">$1000</option>
+                            <option value="3">$1500</option>
+                            <option value="4">$2000</option>
+                            <option value="5">$3000</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <label for="max_price">max price</label>
+                        <select name="" id="max_price" class="selectpicker max_price">
+                            <option value="any" selected>any</option>
+                            <option value="1">$3000</option>
+                            <option value="2">$10000</option>
+                            <option value="3">$20000</option>
+                            <option value="4">$30000</option>
+                            <option value="5">$40000</option>
+                            <option value="5">$50000</option>
+                            <option value="5">$100000</option>
+                        </select>
+                    </div>
+                    <div class="fleft form_element">
+                        <button class="btn btn-default" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>            
+        </div>
+    </section> <!--Search Form-->
+    
+    <section class="row contentRow">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/1.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/2.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/3.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/4.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/5.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/6.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/7.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/8.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/9.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/10.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/11.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+                <div class="col-sm-6 listing_list">
+                    <div class="info_content row">
+                        <div class="col-sm-6 p0 imageRow">
+                            <img src="images/listing/12.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 p0 description">
+                            <div class="row m0 priceRow">                               
+                                <div class="saleTag fleft">For Sale</div>
+                                <div class="price fleft">$125,000</div>
+                            </div>
+                            <a href="listing-details.html" class="location_link"><h4 class="location">Joynton Avenue, Zetland</h4></a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-arrows-alt"></i>5000 Sq Ft</a>
+                            <a href="listing-details.html" class="specify_btn"><i class="fa fa-inbox"></i>3 bedrooms</a>
+                        </div>     
+                    </div>
+                </div> <!--List Listing-->
+            </div>           
+            <nav class="row m0 paginationRow">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    
+    <!--Content Area End-->
+    
+    <!--Another Common Area-->
+    <section class="row pt70 footerBanner">
+        <div class="row m0 inner">
+            <div class="container">
+                <div class="row">
+                    <img src="images/foot-brand.png" alt="footer banner" class="img-responsive fleft property">
+                    <div class="fleft banner_texts">
+                        <h2>Sell <span>or</span> Rent</h2>
+                        <h3>Your Property</h3>                        
+                    </div>
+                    <a href="#" class="sell_rent_link fright">click here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 widget recentPostWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Recent Posts</h4>
+                        <ul class="nav">
+                            <li><a href="single-post.html">New Search Platform Update</a></li>
+                            <li><a href="single-post.html">Envato's Most Wanted - $5,000 for Ghost Themes</a></li>
+                            <li><a href="single-post.html">Update: WordPress Theme Submission Requirements</a></li>
+                            <li><a href="single-post.html">Envato Staff Vs Community Nike+ competition</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget aboutWidget">
+                    <div class="row m0 widgetInner">
+                        <a href="index.html"><img src="images/logos/footer.png" alt=""></a>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, <br><br>Nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget oppeningHoursWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Opening Hours</h4>
+                        <ul class="nav">
+                            <li>Make a Call</li>
+                            <li>90 1234 5678 9012</li>
+                            <li>Send us an Email</li>
+                            <li>estatepro@domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightRow row">
+                <div class="col-sm-5 copyright">© 2015 <a href="index.html">Estate Pro</a>,  All Rights Reserved</div>
+                <div class="col-sm-2 goTop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
+                <div class="col-sm-5 footSocial">
+                    <ul class="nav nav-pills fright">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--jQuery, Bootstrap and other vendor JS-->
+    
+    <!--jQuery-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Owl Carousel-->
+    <script src="vendors/owl.carousel/js/owl.carousel.min.js"></script>
+    
+    <!--Bootstrap Select-->
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+    <!--FlexSlider-->
+    <script src="vendors/flexslider/jquery.flexslider-min.js"></script>
+    
+    <!--Strella JS-->
+    <script src="js/estate-pro.js"></script>
+</body>
+</html>

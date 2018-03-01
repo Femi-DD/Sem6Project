@@ -1,0 +1,97 @@
+#search{
+    &.homepage_search{
+        margin-top: -110px;
+        margin-bottom: 15px;
+        z-index: 2;
+    }
+}
+.searchForm{
+    overflow: visible;
+    .formTitle{
+        padding: 28px 35px;
+        background: #fff;
+        font-family: @baseFont;
+        font-size: 27px;
+        font-weight: bold;
+        color: @baseColor;
+        line-height: 1;
+        span{
+            font-family: @baseFont;
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+    .form_elements{
+        background: @baseColor;
+        padding: 20px;
+        overflow: visible;
+        .form_element{
+            padding: 3px 0;
+            & + .form_element{
+                padding-left: 10px;
+            }
+            button[type="submit"]{
+                background: none @baseColor - #002341;
+                line-height: 37px;
+                padding: 0 25px;
+                text-transform: capitalize;
+                margin-top: 26px;
+                text-shadow: none;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+            }
+            label{
+                display: block;
+                font-weight: normal;
+                font-family: @baseFont3;
+                color: #fff;
+                font-weight: 300;
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+            .bootstrap-select{
+                width: 115px;
+                &.propertyType,&.propertyLocation{
+                    width: 150px;
+                }                
+                &.beds,&.baths{
+                    width: 85px;
+                }                
+                button{
+                    background: none #fff;
+                    border-radius: 5px;
+                    border: none;
+                    line-height: 37px;
+                    padding: 0 10px;
+                    color: #b2b2b2;
+                    span.filter-option{
+                    }
+                    .caret{
+                    }
+                }
+                .dropdown-menu{
+                    border-radius: 0;
+                    padding: 0;
+                    .inner{
+                        li{
+                            a{
+                                color: @baseColor2;
+                                &:hover{
+                                    background: none @baseColor;
+                                    color: #fff;
+                                }
+                            }
+                            &.selected{
+                                a{
+                                    background: none @baseColor;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
