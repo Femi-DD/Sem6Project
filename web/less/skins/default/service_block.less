@@ -1,0 +1,29 @@
+.service_block{
+    .inner{
+        .block_title{
+        }
+        .block_icon{
+            i{
+                color: @baseColor;
+                border: 1px solid @baseColor;
+            }
+        }
+        .read_more{
+        }
+        &:hover{
+            border-color: @baseColor;
+            .block_title{
+                color: @baseColor;
+            }
+            .block_icon{
+                i{
+                    background: @baseColor;
+                }
+            }
+            .read_more{
+                border-color: @baseColor;
+                background: @baseColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/*Spinner*/
+.spinner {
+  width: 70px;
+  border: 1px solid #fff;
+  height: 42px;
+}
+.spinner input {
+  text-align: center;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  line-height: 40px;
+  padding: 0;
+}
+.spinner .input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.spinner .input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 9px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+  border: none;
+}
+.spinner .input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+}
+.spinner .input-group-btn-vertical i {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}

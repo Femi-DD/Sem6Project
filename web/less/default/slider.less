@@ -1,0 +1,86 @@
+#slider{
+    
+}
+
+#mainSlider{
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    .slides{
+        li{
+            .captions{
+                position: absolute;
+                width: 100%;
+                bottom: 110px;
+                .container{
+                    .row{
+                        line-height: 60px;
+                        background: fade(@baseColor3,80%);
+                        color: #fff;
+                        padding-left: 20px;
+                        padding-right: 120px;
+                        font-family: @baseFont3;
+                        font-weight: bold;
+                        font-size: 18px;
+                        span{
+                            float: right;
+                            padding: 0 20px;
+                            background: @baseColor6;
+                        }
+                        a{
+                            display: inline-block;
+                            float: right;
+                            padding: 0 20px;
+                            background: @baseColor4;
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: #FFF;
+                            i{
+                                font-size: 20px;
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .flex-direction-nav{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        top: -170px;
+        li{
+            position: absolute;
+            right: 15px;
+            &.flex-nav-prev{
+                right: 75px;
+            }
+            a{
+                line-height: 59px;
+                height: 60px;
+                position: relative;
+                left: 0;
+                display: block;
+                opacity: 1;
+                top: 0;
+                width: 60px;
+                margin: 0;
+                border-bottom: 1px solid @baseColor - #020c14;
+                border-left: 1px solid @baseColor - #020c14;
+                text-align: center;
+                background: @baseColor;
+                color: #FFF;
+                padding: 0;
+                &:before{
+                    display: none;
+                }
+                i{
+                    background: none;
+                }
+            }
+        }
+    }
+    .slides:hover .flex-direction-nav{
+    }
+}

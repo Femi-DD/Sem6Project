@@ -1,0 +1,72 @@
+.info_content{
+    .imageRow{
+        img{
+        }
+        .saleTag,.rentTag{
+            background: @baseColor;
+        }
+        .rentTag{
+        }
+    }
+    .description{
+        .saleTag,.rentTag{
+            background: @baseColor;
+        }
+        .rentTag{
+        }
+        .priceRow{
+            .price{
+            }
+            i{
+            }
+        }
+        h4.location{
+        }
+        .specify_btn{
+            & + .specify_btn{
+            }
+            i{
+            }
+        }
+    }
+    &:hover{
+        .imageRow{
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                .price{
+                    background: @baseColor;
+                }
+                i{
+                    color: @baseColor;
+                }
+            }
+            h4.location{
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                i{
+                }
+            }
+        }
+    }
+}
+
+// Settings For Google Map
+.gm-style-iw {
+    &:after{
+    }
+}
+
+#homeMap{
+}
+
+#mapBox{
+    &.contact{
+    }
+}

@@ -1,0 +1,165 @@
+.listing_grid{
+    .info_content{
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                .price{
+                }
+                i{                    
+                }
+            }
+            h4.location{                
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                i{
+                }
+            }
+        }
+        &:hover{
+        }
+    }    
+}
+
+.listing_list{
+    .info_content{
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                .price{
+                }
+                i{                    
+                }
+            }
+            h4.location{
+            }
+            a.location_link{
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                i{
+                }
+            }
+        }
+        &:hover{
+            .imageRow{
+                img{
+                }
+                .saleTag{
+                }
+            }
+            .description{
+                .saleTag, .rentTag{
+                }
+                .priceRow{
+                    .price{
+                    }
+                    i{                    
+                    }
+                }
+                h4.location{                
+                }
+                .specify_btn{
+                    & + .specify_btn{
+                    }
+                    i{
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.listing_details{
+    .info_content{
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                .price{
+                }
+                i{                    
+                }
+            }
+            h4.location{
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                &.detail_page_specify_btn{
+                    & + .detail_page_specify_btn{
+                    }
+                }
+                i{
+                }
+            }
+            p{
+            }
+            .additional_features{
+            }
+            .feature{
+                &+ .feature{
+                }
+                i{
+                }
+            }
+        }
+        &:hover{
+            .description{
+                .priceRow{
+                    .price{
+                    }
+                }
+                h4.location{
+                }
+                a{
+                    & + a{
+                    }
+                    i{
+                    }
+                    &.feature{
+                        i{
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+.paginationRow{
+    .pagination{
+        li{
+            a{
+                border-bottom: 2px solid @baseColor;
+            }
+            &+ li{
+            }
+            &.active{
+                a{
+                    background: @baseColor;
+                }
+            }
+        }
+    }
+}

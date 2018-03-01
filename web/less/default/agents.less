@@ -1,0 +1,185 @@
+.agent{
+    padding: 15px;
+    .imageRow{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: @baseColor;
+            z-index: 2;
+            li{
+                a{
+                    padding: 10px;
+                    background: @baseColor;
+                    color: #fff;
+                    text-align: center;
+                    border-bottom: 1px solid fade(@baseColor3,20%);
+                    i{
+                        border: 1px solid  #fff;
+                        border-radius: 100%;
+                        line-height: 28px;
+                        width: 30px;
+                        height: 30px;                        
+                    }
+                }
+                &:last-child{
+                    a{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    .agent_details{
+        position: relative;
+        padding: 0;
+        .phoneNumber{
+            line-height: 50px;
+            background: @baseColor5;
+            color: #FFF;
+            white-space: nowrap;
+            overflow: hidden;
+            height: 0;
+            .transition();
+            i{
+                width: 50px;
+                text-align: center;
+                border-right: 1px solid fade(@baseColor3,60%);
+                margin-right: 15px;
+                line-height: 50px;
+                font-size: 19px;                
+            }
+            &.active{
+                height: 50px;
+                margin-top: -50px;
+            }
+        }
+        .inner{
+            a{
+                background: #FFF;
+                display: block;
+                line-height: 50px;
+                padding-left: 20px;
+                font-size: 16px;
+                font-family: @baseFont3;
+                font-weight: normal;
+                color: #000;
+            }
+            .phone_trigger{
+                background: #FFF;
+                border-left: 1px solid #f2f2f2;
+                font-size: 19px;
+                width: 50px;
+                display: block;
+                text-align: center;
+                float: right;
+                margin-top: -50px;
+                color: @baseColor3;
+                cursor: pointer;
+                .transition();
+                i{
+                    line-height: 50px;
+                }
+                .fa-phone-square{
+                    display: inline-block;
+                }
+                .fa-long-arrow-down{
+                    transform: rotate(-45deg);
+                    display: none;
+                }
+                &:hover{
+                    background: #ececec;
+                }
+                &.active{
+                    background: @baseColor3;
+                    border-left-color: @baseColor3;
+                    color: #FFF;
+                    .fa-phone-square{
+                        display: none;
+                    }
+                    .fa-long-arrow-down{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.agent_details{
+    padding-top: 15px;
+    .imageRow{
+        position: relative;
+        .nav{
+            position: absolute;
+            top: 0;
+            right: 0;
+            li{
+                position: relative;
+                a{
+                    padding: 10px;
+                    background: @baseColor;
+                    color: #fff;
+                    text-align: center;
+                    border-bottom: 1px solid fade(@baseColor3,20%);
+                    i{
+                        border: 1px solid  #fff;
+                        border-radius: 100%;
+                        line-height: 28px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                    &:hover{
+                        color: @baseColor3;
+                        background: #fff;
+                    }
+                }
+                .nav{
+                    position: absolute;
+                    top: 0;
+                    right: 50px;
+                    transform: scale(0,1);
+                    transform-origin: right;
+                    .transition();
+                    li{
+                        white-space: nowrap;
+                        padding: 0 15px;
+                        line-height: 50px;
+                        background: #fff;
+                    }
+                }
+                &:hover{
+                    .nav{
+                        transform: scale(1,1);
+                    }
+                }
+            }
+        }
+    }
+    .agent_desc{
+        padding: 30px;
+        background: #fff;
+        h4{
+            font-family: @baseFont3;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            line-height: 1;
+            margin: 0 0 15px;
+        }
+        p{
+            font-family: @baseFont3;
+            font-weight: 300;
+            color: fade(#000,50%);
+            font-size: 16px;
+            line-height: 23px;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.owl_carousel_home{
+    .owl-controls{
+        .owl-nav{
+            div{
+                color: @baseColor;
+                &:hover{
+                }
+            }
+            .owl-prev{
+            }
+        }
+        .owl-dots{
+            .owl-dot{
+                span{
+                    border: 1px solid fade(@baseColor,20%);
+                }
+                &.active{
+                    span{
+                        border-color: @baseColor;
+                        background: @baseColor;
+                    }
+                }
+            }
+        }
+    }
+}

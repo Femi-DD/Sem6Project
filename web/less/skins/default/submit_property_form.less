@@ -1,0 +1,240 @@
+.type_switch{
+    input[type="checkbox"]{
+    }
+    input[type="checkbox"] + label{
+        span{
+            &.indicator{
+                background: @baseColor;
+                .switch_dot{
+                }
+            }
+            &.switch_left{
+            }
+            &.switch_right{
+            }
+        }
+    }
+    input[type="checkbox"]:checked + label{        
+        span{
+            &.indicator{
+                .switch_dot{
+                }
+            }
+            &.switch_left{
+            }
+            &.switch_right{
+            }
+        }
+    }
+} // Switch
+
+
+.submit_property{
+    .section_title{
+    }
+}
+#submit_property_form{
+    .steps{
+        ul[role="tablist"]{
+            li{
+                &+ li{
+                }
+                a{
+                    span{
+                        &.current-info.audible{
+                        }
+                        &.number{
+                            &:before{
+                            }
+                        }
+                    }
+                }
+                &.current{
+                    a{
+                        color: @baseColor - #000003;
+                        span{
+                            &.number{
+                                &:before{
+                                }
+                            }
+                        }
+                    }
+                }
+                &.done{
+                    a{
+                        span{
+                            &.number{
+                                &:before{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        .form_heading{
+        }
+        fieldset{
+            label{
+            }
+            .form-group{
+            }
+            .type_switch{
+                label{
+                }
+            }
+            .form-control{                
+                &::-moz-placeholder{
+                }
+                &:-ms-input-placeholder{
+                }
+                &::-webkit-input-placeholder{
+                }
+            }
+            #pac-input{
+            }
+            .bootstrap-select{
+                .selectpicker{
+                }
+                .dropdown-menu.open{
+                    .dropdown-menu{
+                        li{
+                            a{
+                                &:hover{
+                                    background: @baseColor;
+                                }
+                            }
+                            &.selected{
+                                a{
+                                    background: @baseColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .file-input{
+                .input-group{
+                    .kv-fileinput-caption{
+                        .file-caption-name{
+                        }
+                    }
+                    .input-group-btn{
+                        .btn{
+                            i{
+                                &.glyphicon-folder-open{
+                                }
+                            }                            
+                        }
+                    }
+                }
+                .file-preview{
+                    .fileinput-remove{
+                    }
+                    .file-drop-zone{
+                        .file-preview-frame{
+                            &:nth-child(3n + 2){
+                            }
+                            img{
+                            }
+                            .file-thumbnail-footer{
+                                .file-caption-name{
+                                }
+                            }
+                            .file-upload-indicator{
+                            }
+                            .file-footer-buttons{
+                                .kv-file-upload{
+                                }
+                                .kv-file-remove{
+                                    &:hover{
+                                    }
+                                    i{
+                                        &:before{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .checkbox_div{
+                input{
+                }
+                input + label{
+                    &:before{
+                    }
+                }
+                input:checked + label{
+                    &:before{
+                    }
+                }
+            }
+            div[role="alert"].alert{
+                button.close{
+                }
+                .title_box{
+                }
+                .value_box{
+                }
+            }
+            .add_new_field{
+                background: @baseColor;
+            }
+            .user_forms{
+                .new_user_form{
+                    &.show{
+                    }
+                    &.hide{
+                    }
+                }
+                .existing_user_form{
+                    &.show{
+                    }
+                    &.hide{
+                    }
+                }
+            }
+            .forgot_password{
+                a{
+                }
+            }
+            &.field1{
+                textarea{
+                }
+            }
+            &.field2{}
+            &.field3{}
+            &.field4{}
+            &.field5{
+                .form-group{
+                }
+            }
+            &.field6{
+                textarea{
+                }
+            }
+        }
+    }
+    .actions{
+        ul{
+            li{
+                &.disabled{
+                }
+                a{
+                }
+            }
+        }
+    }
+}
+
+
+/*Google Map*/
+#propety_location{
+}
+#target {
+      }

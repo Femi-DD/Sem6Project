@@ -1,0 +1,64 @@
+.blog{
+    .inner{
+        background: @baseColor;
+        .imageRow{
+            img{
+            }
+            .meta_row{
+                a{
+                    background: @baseColor;
+                    i{
+                    }
+                }
+                .comments{
+                }
+                .date{}
+            }
+        }
+        .desc{
+            .blogtitle{
+                &:hover{
+                    color: @baseColor;
+                }
+            }
+            p{
+                .read_more{
+                    color: @baseColor;
+                    &:hover{
+                    }
+                }
+            }
+        }
+        &:hover{
+            .imageRow{
+                img{
+                }
+                .meta_row{
+                    a{
+                    }
+                    .comments{
+                    }
+                    .date{}
+                }
+            }
+        }
+    }
+}
+
+.single_blog{
+    .featureImg{
+    }
+    .post_meta{
+        a{
+            background: @baseColor;
+            i{
+            }
+        }
+    }
+    .post_desc{
+        .blogTitle{
+        }
+        p{
+        }
+    }
+}

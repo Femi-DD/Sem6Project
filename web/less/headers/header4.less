@@ -1,0 +1,140 @@
+body{
+    &.default,&.light{
+        header.header4{
+            .topHeader{
+                background: #262626;
+                border-bottom-color: #000;
+                .social_menu{
+                    ul{
+                        li{
+                            border-left-color: #3c3c3c;
+                            &:last-child{
+                                border-right-color: #3c3c3c;
+                            }
+                            a{
+                                color: #FFF;
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+                .top_menu{
+                    .list-inline{
+                        li{
+                            border-left-color: #3c3c3c;
+                            &:last-child{
+                                border-right-color: #3c3c3c;
+                            }
+                            a{
+                                color: #FFF;
+                                i{
+                                    color: #FFF;
+                                }
+                            }
+                            .filterGroup{
+                                button{
+                                    color: #FFF;
+                                    text-shadow: none;
+                                    span{
+                                        color: #fff;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        & + li{
+                                        }
+                                        a{
+                                            color: #859ab3;
+                                            span{
+                                                &:after{
+                                                }
+                                            }
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child{                        
+                                .filterGroup{
+                                    button{
+                                        span{
+                                            background: #fff;
+                                            color: #1b9bff;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            a{
+                                                span{
+                                                    &:after{
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar{
+                background: #1b9bff;
+                .navbar-header{
+                    margin: 0;
+                    button{
+                        i{}
+                    }
+                    .navbar-brand{
+                    }
+                }
+                #mainNavigation{
+                    .nav{
+                        li{
+                            a{
+                                color: #fff;
+                                &:hover,&:focus{
+                                    color: #56616a;
+                                    border-color: #fff;
+                                }
+                            }
+                            &.active{
+                                a{
+                                    background: #fff;
+                                    color: #1b9bff;
+                                    border-color: #fff;
+                                }
+                            }
+                            &.dropdown,&.active,&.open{
+                                .dropdown-menu{
+                                    li{
+                                        a{
+                                            background: #1b9bff;
+                                            color: #FFF;
+                                            &:hover{
+                                                background: #1b9bff;
+                                                color: #56616a;
+                                            }
+                                        }
+                                        &+ li{
+                                            border-top-color: #262626;
+                                        }
+                                        ul{
+                                            border-color: #262626;
+                                        }
+                                    }
+                                }
+                            }
+                            &.open{
+                                a{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+@media (max-width:1199px){
+    #slider{    
+    }
+
+    #mainSlider{
+        .slides{
+            li{
+                .captions{
+                    bottom: 100px;
+                    .container{
+                        .row{
+                            span{
+                            }
+                            a{
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .flex-direction-nav{
+            top: -160px;
+            li{
+                &.flex-nav-prev{
+                }
+                a{
+                    &:before{
+                    }
+                    i{
+                    }
+                }
+            }
+        }
+        .slides:hover .flex-direction-nav{
+        }
+    }
+}
+
+@media (max-width:991px){
+    #slider{    
+    }
+
+    #mainSlider{
+        .slides{
+            li{
+                .captions{
+                    bottom: 0;
+                    .container{
+                        .row{
+                            padding-right: 0;
+                            span{
+                            }
+                            a{
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .flex-direction-nav{
+            top: -120px;
+            li{
+                &.flex-nav-prev{
+                }
+                a{
+                    &:before{
+                    }
+                    i{
+                    }
+                }
+            }
+        }
+        .slides:hover .flex-direction-nav{
+        }
+    }
+}
+
+@media (max-width:767px){
+    #slider{    
+    }
+
+    #mainSlider{
+        .slides{
+            li{
+                .captions{
+                    position: relative;
+                    .container{
+                        padding: 0 15px;
+                        background: fade(@baseColor3,80%);
+                        .row{
+                            line-height: 22px;
+                            font-weight: 300;
+                            font-size: 14px;
+                            padding: 10px 0;
+                            background: none;
+                            span{
+                                display: inline-block;
+                                float: none;
+                                margin-left: 5px;
+                            }
+                            a{
+                                display: inline-block;
+                                float: none;
+                                margin-left: 5px;
+                                i{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .flex-direction-nav{
+            width: 100%;
+            padding: 0;
+            top: 0;
+            background: @baseColor;
+            height: 60px;
+            border-bottom: 1px solid #198feb;
+            li{
+                right: 0;
+                &.flex-nav-prev{
+                    right: auto;
+                    border-right: 1px solid #198feb;
+                }
+                a{
+                    &:before{
+                    }
+                    i{
+                    }
+                }
+            }
+        }
+        .slides:hover .flex-direction-nav{
+        }
+    }
+}

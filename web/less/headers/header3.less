@@ -1,0 +1,132 @@
+body{
+    &.default,&.light{
+        header.header3{
+            .topHeader{
+                background: #1b9bff;
+                border: none;
+                .social_menu{
+                    ul{
+                        li{
+                            border-left-color: #1990ed;
+                            &:last-child{
+                                border-right-color: #1990ed;
+                            }
+                            a{
+                                color: #FFF;
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+                .top_menu{
+                    .list-inline{
+                        li{
+                            border-left-color: #1990ed;
+                            &:last-child{
+                                border-right-color: #1990ed;
+                            }
+                            a{
+                                color: #FFF;
+                                i{
+                                    color: #FFF;
+                                }
+                            }
+                            .filterGroup{
+                                button{
+                                    color: #FFF;
+                                    text-shadow: none;
+                                    span{
+                                        color: #fff;
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        & + li{
+                                        }
+                                        a{
+                                            color: #859ab3;
+                                            span{
+                                                &:after{
+                                                }
+                                            }
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child{                        
+                                .filterGroup{
+                                    button{
+                                        span{
+                                            background: #fff;
+                                            color: #1b9bff;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            a{
+                                                span{
+                                                    &:after{
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar{
+                background: #262626;
+                .navbar-header{
+                    margin: 0;
+                    button{
+                        i{}
+                    }
+                    .navbar-brand{
+                    }
+                }
+                #mainNavigation{
+                    .nav{
+                        li{
+                            a{
+                                color: #adbdc9;
+                                &:hover,&:focus{
+                                }
+                            }
+                            &.active{
+                                a{
+                                    color: #fff;
+                                }
+                            }
+                            &.dropdown,&.active,&.open{
+                                .dropdown-menu{
+                                    li{
+                                        a{
+                                            background: #262626;
+                                            &:hover{
+                                                background: #262626;
+                                            }
+                                        }
+                                        &+ li{
+                                        }
+                                        ul{
+                                        }
+                                    }
+                                }
+                            }
+                            &.open{
+                                a{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

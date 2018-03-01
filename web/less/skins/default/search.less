@@ -1,0 +1,51 @@
+#search{
+    &.homepage_search{
+    }
+}
+.searchForm{
+    .formTitle{
+        color: @baseColor;
+        span{
+        }
+    }
+    .form_elements{
+        background: @baseColor;
+        .form_element{
+            & + .form_element{
+            }
+            button[type="submit"]{
+                background: none @baseColor - #002341;
+            }
+            label{
+            }
+            .bootstrap-select{
+                &.propertyType,&.propertyLocation{
+                }                
+                &.beds,&.baths{
+                }                
+                button{
+                    span.filter-option{
+                    }
+                    .caret{
+                    }
+                }
+                .dropdown-menu{
+                    .inner{
+                        li{
+                            a{
+                                &:hover{
+                                    background: none @baseColor;
+                                }
+                            }
+                            &.selected{
+                                a{
+                                    background: none @baseColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

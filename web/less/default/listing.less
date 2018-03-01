@@ -1,0 +1,241 @@
+.listing_grid{
+    padding: 15px;
+    .info_content{
+        margin: 0;
+        box-shadow: 0 0 0 #ccc;
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                .price{
+                }
+                i{                    
+                }
+            }
+            h4.location{                
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                i{
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 3px 3px 5px #ccc;
+        }
+    }    
+}
+
+.listing_list{
+    padding: 15px;
+    .info_content{
+        background: @baseColor3;
+        box-shadow: 0 0 0 #ccc;
+        margin: 0;
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            height: auto;
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            padding: 25px;
+            .priceRow{
+                margin: 0;
+                .price{
+                    top: 0;
+                    right: 0;
+                    margin-top: 0;
+                }
+                i{                    
+                }
+            }
+            h4.location{
+                margin-top: 15px;
+            }
+            a.location_link{
+                padding: 0;
+                border: none;
+                border-radius: 0;
+            }
+            .specify_btn{
+                padding: 0 12px;
+                & + .specify_btn{
+                    margin-left: 7px;
+                }
+                i{
+                    margin-right: 7px;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 3px 3px 5px #ccc;            
+            background: #fff;
+            .imageRow{
+                img{
+                }
+                .saleTag{
+                }
+            }
+            .description{
+                .saleTag, .rentTag{
+                    background: @baseColor6;
+                }
+                .priceRow{
+                    .price{
+                    }
+                    i{                    
+                    }
+                }
+                h4.location{                
+                }
+                .specify_btn{
+                    & + .specify_btn{
+                    }
+                    i{
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.listing_details{
+    padding: 15px 0;
+    .info_content{
+        margin: 0;
+        box-shadow: 0 0 0 #ccc;
+        // Rest styles comes from Google Map Home Less
+        .imageRow{
+            height: auto;
+            img{
+            }
+            .saleTag{
+            }
+        }
+        .description{
+            .priceRow{
+                margin: -15px 0 0;
+                .price{
+                    margin: 0;
+                }
+                i{                    
+                }
+            }
+            h4.location{
+                margin-top: 15px;
+            }
+            .specify_btn{
+                & + .specify_btn{
+                }
+                &.detail_page_specify_btn{
+                    display: inline-block;
+                    & + .detail_page_specify_btn{
+                        margin-left: 10px;
+                    }
+                }
+                i{
+                }
+            }
+            p{
+                font-family: @baseFont3;
+                font-weight: 300;
+                line-height: 23px;
+                font-size: 16px;
+                color: fade(#fff,50%);
+                margin: 20px 0 25px;
+            }
+            .additional_features{
+                margin-bottom: 30px;
+            }
+            .feature{
+                margin-right: 10px;
+                margin-bottom: 10px;                
+                border-radius: 0;
+                border: 1px solid fade(#fff,20%);
+                line-height: 40px;
+                padding: 0 15px;
+                font-family: @baseFont3;
+                font-weight: 300;
+                color: #FFF;
+                font-size: 13px;
+                display: inline-block;
+                &+ .feature{
+                    margin-left: 0;
+                }
+                i{
+                    color: @baseColor6;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: none;
+            .description{
+                background: @baseColor3;                
+                .priceRow{
+                    .price{
+                        background: @baseColor6;
+                    }
+                }
+                h4.location{
+                    color: #fff;
+                }
+                a{
+                    color: #fff;
+                    border: 1px solid fade(#fff,20%);
+                    & + a{
+                    }
+                    i{
+                        color: #fff;
+                    }
+                    &.feature{
+                        i{
+                            color: @baseColor6;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+.paginationRow{
+    margin-top: 45px;
+    .pagination{
+        border-radius: 0;
+        margin: 0;
+        li{
+            background: none;
+            display: inline-block;
+            a{
+                padding: 0 16px;
+                line-height: 40px;
+                border: none;
+                border-bottom: 2px solid @baseColor;
+                border-radius: 0;
+                color: #000;
+                font-size: 18px;
+                font-family: @baseFont3;
+            }
+            &+ li{
+                margin-left: 7px;
+            }
+            &.active{
+                a{
+                    background: @baseColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

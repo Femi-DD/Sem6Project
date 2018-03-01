@@ -1,0 +1,123 @@
+body{
+    &.default,&.light{
+        header.header1{
+            .topHeader{
+                .social_menu{
+                    ul{
+                        li{
+                            &:last-child{
+                            }
+                            a{
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+                .top_menu{
+                    .list-inline{
+                        li{
+                            &:last-child{
+                            }
+                            a{
+                                i{
+                                }
+                            }
+                            .filterGroup{
+                                button{
+                                    span{
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        & + li{
+                                        }
+                                        a{
+                                            span{
+                                                &:after{
+                                                }
+                                            }
+                                            &:hover{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child{                        
+                                .filterGroup{
+                                    button{
+                                        span{  
+                                        }
+                                    }
+                                    ul{
+                                        right: -110px;
+                                        li{
+                                            a{
+                                                span{
+                                                    &:after{
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar{
+                background: #1b9bff;
+                .navbar-header{
+                    margin: 0;
+                    button{
+                        i{}
+                    }
+                    .navbar-brand{
+                    }
+                }
+                #mainNavigation{
+                    .nav{
+                        li{
+                            a{
+                                color: #fff;
+                                &:hover,&:focus{
+                                    color: #56616a;
+                                    border-color: #fff;
+                                }
+                            }
+                            &.active{
+                                a{
+                                    color: #fff;
+                                    border-color: #fff;
+                                }
+                            }
+                            &.dropdown,&.active,&.open{
+                                .dropdown-menu{
+                                    li{
+                                        a{
+                                            background: #1b9bff;
+                                            color: #FFF;
+                                            &:hover{
+                                                background: #1b9bff;
+                                                color: #56616a;
+                                            }
+                                        }
+                                        &+ li{
+                                        }
+                                        ul{
+                                        }
+                                    }
+                                }
+                            }
+                            &.open{
+                                a{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

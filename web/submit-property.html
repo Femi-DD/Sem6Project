@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estate Pro</title>
+    
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--Bootstrap and Other Vendors-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.min.css">    
+    <link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/flexslider/flexslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap-select/css/bootstrap-select.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap-fileinput/css/fileinput.min.css" media="screen" />
+    
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+    <!--Mechanic Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Responsive Style-->    
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body class="default">
+    
+    <header class="row">
+        <div class="row m0 topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 social_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 top_menu">
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-user"></i> login</a></li>
+                            <li><a href="#"><i class="fa fa-pencil"></i> register</a></li>
+                            <li>
+                                <div class="input-group-btn currencyFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue">&#36;</span> Currency
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">&#36;</span> usd</a></li>
+                                        <li><a href="#"><span class="value">&#163;</span> pound</a></li>
+                                        <li><a href="#"><span class="value">&#165;</span> yen</a></li>
+                                        <li><a href="#"><span class="value">&#8364;</span> euro</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group-btn languageFilters filterGroup">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span id="filterValue2">en</span> language
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#"><span class="value">en</span> english</a></li>
+                                        <li><a href="#"><span class="value">bn</span> bengali</a></li>
+                                        <li><a href="#"><span class="value">de</span> German</a></li>
+                                        <li><a href="#"><span class="value">nl</span> Dutch</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation">
+                        <i class="fa fa-bars"></i> Menu
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="mainNavigation">              
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-map.html">Home - Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Properties</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="listing-grid.html">Listing Grid</a></li>
+                                <li><a href="listing-list.html">Listing List</a></li>
+                                <li><a href="listing-details.html">Listing Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Submit New</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="submit-property.html">Property Info</a></li>
+                                <li><a href="submit-property.html">Add Photo Gallery</a></li>
+                                <li><a href="submit-property.html">Amenities</a></li>
+                                <li><a href="submit-property.html">Google Map Locaion</a></li>
+                                <li><a href="submit-property.html">Additional Details</a></li>
+                                <li>
+                                    <a href="#">Users</a>
+                                    <ul>
+                                        <li><a href="submit-property.html">Existing User</a></li>
+                                        <li><a href="submit-property.html">Owner Info</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Agents</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="agents.html">Agents</a></li>
+                                <li><a href="agent-details.html">Agents Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog2col.html">Blog 2 Collumn</a></li>
+                                <li><a href="blog3col.html">Blog 3 Collumn</a></li>
+                                <li><a href="single-post.html">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header> <!--Header End-->
+    <!--Common Area End-->
+    
+    <!--Content Area Begin-->
+    
+    <section class="row pageCover">
+        <div class="container">
+            <div class="row m0">
+                <div class="fleft page_name">Submit your Property</div>
+                <div class="fright page_dir">
+                    <ul class="list-inline">
+                        <li><a href="index.html">home</a></li>
+                        <li>submit your property</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="row contentRow submit_property">
+        <div class="container">
+            <h3 class="section_title">Submit your Property</h3>
+            <form action="#" id="submit_property_form" class="row">
+                <h4 class="form_heading">Property Informations</h4>
+                <fieldset class="field1">
+                    <div class="form-group listing_type type_switch">
+                        <input type="checkbox" name="listing_type" id="listing_type" value="0">
+                        <label for="listing_type" class="switch">
+                            <span class="listing_sale switch_left">For Sale</span>
+                            <span class="indicator"><span class="switch_dot"></span></span>
+                            <span class="listing_rent switch_right">For Rent</span>
+                        </label>
+                    </div>
+                    <div class="form-group property_title">
+                        <label for="property_title">Property Title</label>
+                        <input type="text" class="form-control" name="" id="property_title">
+                    </div>
+                    <div class="form-group property_desc">
+                        <label for="property_desc">Property Description</label>
+                        <textarea name="" id="property_desc" class="form-control"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group property_type">
+                                <label for="property_type">Property Type</label>
+                                <select name="" id="property_type" class="property_type selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="home">home</option>
+                                    <option value="restrurent">restrurent</option>
+                                    <option value="hotel">hotel</option>
+                                    <option value="resort">resort</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group property_desc">
+                                <label for="property_location">Property Location</label>
+                                <select name="" id="property_location" class="property_location selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">New York</option>
+                                    <option value="">San Diago</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group beds">
+                                <label for="beds">Beds</label>
+                                <select name="" id="beds" class="beds selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group baths">
+                                <label for="baths">Baths</label>
+                                <select name="" id="baths" class="baths selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group square_feet">
+                                <label for="square_feet">Sq.ft</label>
+                                <select name="" id="square_feet" class="square_feet selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">750</option>
+                                    <option value="">1000</option>
+                                    <option value="">1500</option>
+                                    <option value="">2000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group property_min_price">
+                                <label for="property_min_price">Min Price</label>
+                                <select name="" id="property_min_price" class="property_min_price selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">$1000</option>
+                                    <option value="">$1200</option>
+                                    <option value="">$1500</option>
+                                    <option value="">$2200</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group property_max_price">
+                                <label for="property_max_price">Max Price</label>
+                                <select name="" id="property_max_price" class="property_max_price selectpicker form-control">
+                                    <option value="">any</option>
+                                    <option value="">$10000</option>
+                                    <option value="">$12000</option>
+                                    <option value="">$15000</option>
+                                    <option value="">$22000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <h4 class="form_heading">Add Photo Gallery</h4>
+                <fieldset class="field2">
+                    <input id="add_photo_gallery" type="file" class="file-loading" data-show-upload="false" multiple>
+                </fieldset>
+                <h4 class="form_heading">Amenities</h4>
+                <fieldset class="field3">
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity1" checked>
+                        <label for="amenity1">Curtains/Drapes</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity2" checked>
+                        <label for="amenity2">Hotwater</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity3">
+                        <label for="amenity3">Screens</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity4">
+                        <label for="amenity4">Oven/Range</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity5">
+                        <label for="amenity5">Convection Oven</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity6">
+                        <label for="amenity6">Convection Oven</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity7" checked>
+                        <label for="amenity7">Chandelier(s)</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity8" checked>
+                        <label for="amenity8">Ceiling Fan</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity9">
+                        <label for="amenity9">Refrigerator</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity10">
+                        <label for="amenity10">Freezer</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity11" checked>
+                        <label for="amenity11">Oven/Range</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity12" checked>
+                        <label for="amenity12">Freezer</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity13">
+                        <label for="amenity13">Refrigerator</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity14">
+                        <label for="amenity14">Light Fixtures</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity15" checked>
+                        <label for="amenity15">Ceiling Fan</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity16">
+                        <label for="amenity16">Convection Oven</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity17">
+                        <label for="amenity17">Screens</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity18">
+                        <label for="amenity18">Chandelier(s)</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity19" checked>
+                        <label for="amenity19">Light Fixtures</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity20">
+                        <label for="amenity20">Chandelier(s)</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity21" checked>
+                        <label for="amenity21">Oven/Range</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity22" checked>
+                        <label for="amenity22">Screens</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity23">
+                        <label for="amenity23">Freezer</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity24">
+                        <label for="amenity24">Curtains/Drapes</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity25">
+                        <label for="amenity25">Curtains/Drapes</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity26" checked>
+                        <label for="amenity26">Curtains/Drapes</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity27" checked>
+                        <label for="amenity27">Hotwater</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity28">
+                        <label for="amenity28">Screens</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity29" checked>
+                        <label for="amenity29">Oven/Range</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity30">
+                        <label for="amenity30">Convection Oven</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity31" checked>
+                        <label for="amenity31">Convection Oven</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity32">
+                        <label for="amenity32">Chandelier(s)</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity33">
+                        <label for="amenity33">Ceiling Fan</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity34" checked>
+                        <label for="amenity34">Refrigerator</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity35">
+                        <label for="amenity35">Freezer</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity36">
+                        <label for="amenity36">Oven Range</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity37" checked>
+                        <label for="amenity37">Freezer</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity38">
+                        <label for="amenity38">Light Fixtures</label>
+                    </div> <!--checkbox-->
+                    <div class="fleft checkbox_div">
+                        <input type="checkbox" id="amenity39" checked>
+                        <label for="amenity39">Ceiling Fan</label>
+                    </div> <!--checkbox-->
+                </fieldset>
+                <h4 class="form_heading">Google Map Location</h4>
+                <fieldset class="field4">
+                    <input id="pac-input" class="controls form-control" type="text" placeholder="Find Location">
+                    <div id="propety_location"></div>
+                </fieldset>
+                <h4 class="form_heading">Additional Details</h4>
+                <fieldset class="field5 additional_details">
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <div class="row m0 alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="fleft title_box form-group">
+                            <label >Title</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="fleft value_box form-group">
+                            <label >Value</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div> <!--Additional Details Row-->
+                    <button class="add_new_field" type="button">Add New Field</button>
+                </fieldset>
+                <h4 class="form_heading">Owner Info</h4>
+                <fieldset class="field6">
+                    <div class="form-group user_type type_switch">
+                        <input type="checkbox" name="user_type" id="user_type" value="0">
+                        <label for="user_type" class="switch">
+                            <span class="new_user switch_left">New user</span>
+                            <span class="indicator"><span class="switch_dot"></span></span>
+                            <span class="existing_user switch_right">Existing user</span>
+                        </label>
+                    </div>
+                    <div class="row m0 user_forms">
+                        <div class="row m0 new_user_form show">                            
+                            <div class="form-group property_title">
+                                <label >Full Name</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group property_desc">
+                                <label >Short Info about you</label>
+                                <textarea  class="form-control"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group property_type">
+                                        <label >Email Address</label>
+                                        <input type="email" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group property_desc">
+                                        <label >Phone Number</label>
+                                        <input type="tel" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--New User Form-->
+                        <div class="row m0 existing_user_form hide">                            
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group property_type">
+                                        <label >Email Address</label>
+                                        <input type="email" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group property_desc">
+                                        <label >Password</label>
+                                        <input type="password" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forgot_password row m0">
+                                <a href="#">Forgot Your Password?</a>
+                            </div>
+                        </div> <!--Existing User Form-->
+                    </div>
+                </fieldset>
+            </form>            
+        </div>
+    </section>
+    
+    <!--Content Area End-->
+    
+    <!--Another Common Area-->
+    <section class="row pt70 footerBanner">
+        <div class="row m0 inner">
+            <div class="container">
+                <div class="row">
+                    <img src="images/foot-brand.png" alt="footer banner" class="img-responsive fleft property">
+                    <div class="fleft banner_texts">
+                        <h2>Sell <span>or</span> Rent</h2>
+                        <h3>Your Property</h3>                        
+                    </div>
+                    <a href="#" class="sell_rent_link fright">click here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 widget recentPostWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Recent Posts</h4>
+                        <ul class="nav">
+                            <li><a href="single-post.html">New Search Platform Update</a></li>
+                            <li><a href="single-post.html">Envato's Most Wanted - $5,000 for Ghost Themes</a></li>
+                            <li><a href="single-post.html">Update: WordPress Theme Submission Requirements</a></li>
+                            <li><a href="single-post.html">Envato Staff Vs Community Nike+ competition</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget aboutWidget">
+                    <div class="row m0 widgetInner">
+                        <a href="index.html"><img src="images/logos/footer.png" alt=""></a>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, <br><br>Nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 widget oppeningHoursWidget">
+                    <div class="row m0 widgetInner">
+                        <h4 class="widgetTitle">Opening Hours</h4>
+                        <ul class="nav">
+                            <li>Make a Call</li>
+                            <li>90 1234 5678 9012</li>
+                            <li>Send us an Email</li>
+                            <li>estatepro@domain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrightRow row">
+                <div class="col-sm-5 copyright">© 2015 <a href="index.html">Estate Pro</a>,  All Rights Reserved</div>
+                <div class="col-sm-2 goTop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
+                <div class="col-sm-5 footSocial">
+                    <ul class="nav nav-pills fright">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Style Switch -->
+    <div id="customizer" class="s-close">
+        <span class="customizerTrigger"><i class="fa fa-cog"></i></span>
+        <div id="options" class="visible">
+            <div class="options-head">
+                Style Switcher
+            </div>	
+
+            <div class="options-segment clearfix headers-sel">
+                <h6 class="color-head">Body Background</h6>
+                    <ul class="version">
+                        <li><a class="lite bg-lite">Light</a></li>
+                        <li><a class="default bg-default">Default</a></li>
+                    </ul>
+            </div>
+
+            <div class="options-segment clearfix colors-sel">
+                <h6 class="color-head">Color Scheme</h6>
+                <ul class="color-scheme clearfix">
+                    <li class="skin-default"><a href="css/skins/skin-default" data-rel="skin-default" class="styleswitch"></a></li>
+                    <li class="skin1"><a href="css/skins/skin1" data-rel="skin1" class="styleswitch"></a></li>
+                    <li class="skin2"><a href="css/skins/skin2" data-rel="skin2" class="styleswitch"></a></li>
+                    <li class="skin3"><a href="css/skins/skin3" data-rel="skin3" class="styleswitch"></a></li>
+                    <li class="skin4"><a href="css/skins/skin4" data-rel="skin4" class="styleswitch"></a></li>
+                    <li class="skin5"><a href="css/skins/skin5" data-rel="skin5" class="styleswitch"></a></li>
+                    <li class="skin6"><a href="css/skins/skin6" data-rel="skin6" class="styleswitch"></a></li>
+                    <li class="skin7"><a href="css/skins/skin7" data-rel="skin7" class="styleswitch"></a></li>
+                </ul>
+            </div>		
+
+            <div class="options-segment clearfix headers-ver">
+                <h6 class="color-head">Header Version</h6>
+                <ul class="headerVersions nav">
+                    <li><a class="headerDefault">Default</a></li>
+                    <li><a class="headerVersion1">Version 1</a></li>
+                    <li><a class="headerVersion2">Version 2</a></li>
+                    <li><a class="headerVersion3">Version 3</a></li>
+                    <li><a class="headerVersion4">Version 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Style Switch -->
+    
+    <!--jQuery, Bootstrap and other vendor JS-->
+    
+    <!--jQuery-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    
+    <!--Google Map Api-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true&amp;libraries=places"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Owl Carousel-->
+    <script src="vendors/owl.carousel/js/owl.carousel.min.js"></script>
+    
+    <!--Bootstrap Select-->
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    
+    <!--Contact-->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    
+    <!--jQuery Steps-->
+    <script src="vendors/jquery-steps/jquery.steps.min.js"></script>
+    
+    <!--Bootstrap File Input-->
+    <script src="vendors/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="vendors/bootstrap-fileinput/js/fileinput_locale_LANG.js"></script>
+    
+    <!--FlexSlider-->
+    <script src="vendors/flexslider/jquery.flexslider-min.js"></script>
+    
+    <!--Strella JS-->
+    <script src="js/estate-pro.js"></script>
+    <script src="js/steps.js"></script>
+    <script src="js/add_photo_gallery.js"></script>
+    <script src="js/google-map-submit.js"></script>
+    <script>
+        (function($) {
+            "use strict";
+
+        $('.actions ul li a').on('click',function(){
+            setTimeout(function(){
+                google.maps.event.trigger($("#propety_location")[0], 'resize');
+            }, 1000)
+        })
+
+        })(jQuery)
+    </script>
+</body>
+</html>

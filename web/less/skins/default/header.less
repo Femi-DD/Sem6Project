@@ -1,0 +1,124 @@
+header{
+    .topHeader{
+        .social_menu{
+            ul{
+                li{
+                    &:last-child{
+                    }
+                    a{
+                        i{                            
+                        }
+                    }
+                }
+            }
+        }
+        .top_menu{
+            .list-inline{
+                li{
+                    &:last-child{
+                    }
+                    a{
+                        i{
+                            color: @baseColor;
+                        }
+                    }
+                    .filterGroup{
+                        button{
+                            span{
+                                color: @baseColor;
+                            }
+                        }
+                        ul{
+                            li{
+                                & + li{
+                                }
+                                a{
+                                    span{
+                                        &:after{
+                                        }
+                                    }
+                                    &:hover{
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{                        
+                        .filterGroup{
+                            button{
+                                span{     
+                                    background: @baseColor;
+                                }
+                            }
+                            ul{
+                                li{
+                                    a{
+                                        span{
+                                            &:after{
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar{
+        .navbar-header{
+            button{
+                i{}
+            }
+            .navbar-brand{
+            }
+        }
+        #mainNavigation{
+            .nav{
+                li{
+                    a{
+                        &:hover,&:focus{
+                            color: @baseColor;
+                            border-color: @baseColor;
+                        }
+                    }
+                    &.active{
+                        a{
+                            color: @baseColor;
+                            border-color: @baseColor;
+                        }
+                    }
+                    &.dropdown,&.active,&.open{
+                        .dropdown-menu{
+                            border: 1px solid fade(@baseColor,30%);
+                            li{
+                                a{
+                                    &:hover{
+                                        color: @baseColor;
+                                    }
+                                }
+                                &+ li{
+                                    border-top: 1px solid fade(@baseColor,30%);
+                                }
+                                ul{
+                                    border: 1px solid fade(@baseColor,30%);
+                                    li{
+                                        a{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.open{
+                        a{
+                            color: @baseColor;
+                            border-color: fade(@baseColor,30%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

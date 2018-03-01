@@ -1,0 +1,67 @@
+footer{
+    .widget{
+        .widgetInner{
+            border-top-color: @baseColor;
+        }
+        h4{
+        }
+        p{
+        }
+        
+        &.recentPostWidget{
+            .nav{
+                li{
+                    a{
+                        &:hover,&:focus{
+                        }
+                    }
+                    &+ li{
+                    }
+                }
+            }
+        }
+        &.aboutWidget{
+            a{
+                &:after{
+                }
+            }
+            p{
+            }
+        }
+        &.oppeningHoursWidget{
+            .nav{
+                li{
+                    &:nth-child(odd){
+                        &:after{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .copyrightRow{
+        .copyright{
+            a{
+            }
+        }
+        .goTop{
+            a{
+            }
+        }
+        .footSocial{
+            .nav{
+                li{
+                    &+ li{
+                    }
+                    a{
+                        &:hover{
+                            background: @baseColor;
+                            border-color: @baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
