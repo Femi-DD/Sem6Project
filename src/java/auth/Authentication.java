@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
  * @authorMail	femi.highsky@yahoo.com
  * @authorWebsite http://www.kolequotes.com/profile
  */
-public class LoginServlet extends HttpServlet {
+public class Authentication extends HttpServlet {
 
   private String name, email, username, password, id = "";
 
