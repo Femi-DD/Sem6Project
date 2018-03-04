@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
  * @authorMail	femi.highsky@yahoo.com
  * @authorWebsite http://www.kolequotes.com/profile
  */
-public class LoginServlet extends HttpServlet {
+public class Authentication extends HttpServlet {
 
   private String name, email, username, password, id = "";
 
@@ -114,6 +114,7 @@ public class LoginServlet extends HttpServlet {
   }
 
   //access to the servlet, just like a main method, but for java web apps
+  //is also reponsible for handling user request and generating reponse to be sent to the user
   protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 			 throws ServletException, IOException {
 	 response.setContentType("text/html;charset=UTF-8");
