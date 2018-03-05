@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- *
  * @authorName	Kole-Ibrahim AbdulQudus
  * @authorMail	femi.highsky@yahoo.com
  * @authorWebsite http://www.kolequotes.com/profile
