@@ -22,7 +22,7 @@ import javax.servlet.http.HttpSession;
 public class Authentication extends HttpServlet {
 
   private String name, email, username, password, id = "";
-
+  //test
   Connection con;
   PreparedStatement prep;
   final String url = "jdbc:mysql://localhost:3306/aptech?zeroDateTimeBehavior=convertToNull";
