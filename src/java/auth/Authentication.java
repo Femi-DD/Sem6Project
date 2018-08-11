@@ -30,14 +30,14 @@ public class Authentication extends HttpServlet {
    *
    * Connection Method supply your phpMyAdmin or MySQL database username and
    * password is you have the option set in your phpMyAdmin/MySQL if not just
-   * change babafemi10665798 to an empty string, but leave root as is, it's a
+   * change password to an empty string, but leave root as is, it's a
    * default in phpMyAdmin
    *
    */
   protected void connect() {
     try {
       Class.forName("com.mysql.jdbc.Driver");
-      con = DriverManager.getConnection(url, "root", "babafemi10665798");
+      con = DriverManager.getConnection(url, "root", "password");
     } catch (ClassNotFoundException | SQLException ex) {
       System.out.println(ex.getMessage());
     }
